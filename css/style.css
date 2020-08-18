@@ -120,6 +120,12 @@ body {
     font-weight: 800;
 }
 
+.header p {
+
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+}
+
 .header h3 span {
 
     color: #ffc107;
@@ -593,6 +599,31 @@ h3.double::after {
     scroll-behavior: smooth;
 }
 
+.projects .client {
+
+    margin-left: 50px;
+}
+
+.projects .work {
+
+    margin-left: 45px
+}
+
+.projects .site {
+
+    margin-left: 109px
+}
+
+.projects .contract {
+
+    margin-left: 34px
+}
+
+.projects .vendor {
+
+    margin-left: 59px
+}
+
 .projects h3 {
 
     display: flex;
@@ -602,6 +633,11 @@ h3.double::after {
     font-weight: 1000;
     font-size: 32px;
     color: rgb(120, 159, 220);
+}
+
+.project_details {
+
+    padding: 120px 70px 120px 0;
 }
 
 .project_details h2 {
@@ -711,6 +747,10 @@ footer p {
     font-family: 'Roboto Condensed', sans-serif;
     color: #545963 !important;
 
+}
+
+.footer_para {
+    width: 70%;
 }
 
 .btn-floating {
@@ -827,6 +867,7 @@ footer h3 {
     font-size: 32px;
     color: rgb(65, 65, 65);
 }
+
 .team_members table {
 
     margin-top: 5%;
@@ -1116,6 +1157,7 @@ img {
     background-color: orangered;
     color: white;
 }
+
 /* equipment page end */
 
 /* services page start*/
@@ -1234,7 +1276,8 @@ img {
 
 .service_carousel {
 
-    height: 1150px;
+    height: fit-content;
+    margin-bottom: 5%;
 }
 
 .service_carousel p {
@@ -1250,17 +1293,18 @@ img {
     height: 20px;
     padding: 20px;
     margin: 8px 0 0 2px;
-    
+
 }
+
 .prev_outer {
 
     border: 2px solid white;
     border-radius: 30px;
     height: 60px;
     width: 60px;
-    -webkit-box-shadow: 4px 7px 30px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 4px 7px 30px -5px rgba(0,0,0,0.75);
-box-shadow: 4px 7px 30px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
 }
 
 .prev_inner {
@@ -1277,9 +1321,9 @@ box-shadow: 4px 7px 30px -5px rgba(0,0,0,0.75);
     border-radius: 30px;
     height: 60px;
     width: 60px;
-    -webkit-box-shadow: 4px 7px 30px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 4px 7px 30px -5px rgba(0,0,0,0.75);
-box-shadow: 4px 7px 30px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
 }
 
 /* .services_image img {
@@ -1406,7 +1450,7 @@ blockquote {
 
 .contact iframe {
 
-    margin-top: 600px;
+    margin-top: 520px;
 }
 
 .contact input {
@@ -1558,6 +1602,7 @@ blockquote {
     color: #414141;
     font-size: 20px;
 }
+
 .mission i {
 
     font-size: 50px;
@@ -1610,144 +1655,306 @@ blockquote {
 
 /* media queries */
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 
-    .top img {
-        padding-left: 187px;
+@media only screen and (min-width: 1201px) {
+
+    .services {
+
+        margin-top: 110vh;
     }
 }
+
+
 
 @media only screen and (max-width: 1200px) {
 
-    .top img {
-        padding-left: 187px;
-    }
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {}
 
-    .top img {
+@media only screen and (max-width: 768px) {}
 
-        padding-left: px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    .projects img {
-
-        width: 300px;
-    }
-
-    .top img {
-
-        padding-left: 102px
-    }
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 602px) {
+@media only screen and (max-width: 480px) {
 
     .services {
 
         margin-top: 110vh;
     }
-
-    .projects {
-
-        /* margin-top: 50vh; */
-        /* height: 200vh; */
-    }
-
-    .project_details {
-
-        /* margin: -150px 0 0 120px; */
-        width: 100%;
-
-    }
-
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 602px) {
-
-    .services {
-
-        margin-top: 110vh;
-    }
-
-    .projects {
-
-        margin-top: 50vh;
-        height: 130vh;
-    }
-
-    .project_details {
-
-        margin: -150px 0 0 120px;
-        width: 100%;
-
-    }
-
-    .projects img {
-
-        height: 500px;
-    }
-
-    /* .counter_top {
-
-        margin-top: 600px;
-    } */
 
     .services_card {
-
-        padding: 100px;
-        margin-top: 5%;
+        width: 80%;
     }
-}
 
-@media only screen and (max-width: 360px) {
+    .top {
 
-    .projects {
+        background-color: #ffc107;
+    }
 
-        height: 200vh;
+    .header h3 {
+        font-size: 35px;
+    }
+
+    .quote {
+
+        margin-top: 330px;
     }
 
     .projects img {
 
-        height: 450px;
+        width: 100%;
+        height: 35rem;
+        padding: 120px 50px 120px 50px;
+        object-fit: cover;
+    }
+
+    .project_details {
+
+        padding: 0 0 70px 0;
+    }
+
+    .project_details h2 {
+
+        display: flex;
+
+    }
+
+    .project_details .row {
+
+        display: flex;
+        text-align: left;
+        /* width: 300px; */
+    }
+
+    .legal .row .col-md-4 {
+
+        margin-top: 40px;
+    }
+
+    .flip-card-front img {
+
+        width: 420px;
+        height: 270px;
+
+    }
+
+    .flip-card {
+       
+        width: 420px;
+        height: 270px;
+    }
+
+    .imp_certificate img {
+
+        margin-top: 40px;
+    }
+
+    .footer_para {
+
+        width: 100%;
+    }
+
+    .services h3 span{
+
+        background-color: #ffc107;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .project_title span {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: white;
+
+    }
+
+    .legal h3 span {
+
+        background-color: #ffc107;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .staff h3 span {
+        background-color: #ffc107;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .team_members h3 span {
+
+        background-color: #ffc107;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .top span i {
+
+        font-size: 30px;
+    }
+
+    .top .navbar-collapse{
+
+        background-color: #ffc107;
+    }
+
+    .safety_detail {
+
+        margin-bottom: 100px;
+    }
+
+    .legal {
+
+        margin-bottom: 100px;
+    }
+
+    .header_content p {
+
+        width: 100%;
+    }
+
+    .mission img {
+
+        display: none;
+    }
+
+    .vision img {
+
+        display: none;
+    }
+
+    .staff img {
+
+        height: 600px;
     }
 
     .equipments {
 
-        margin-top: 600px;
+        margin-top: 70vh;
     }
 
-    .equipments table {
+    .equipment_header h3 {
 
-        font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
+        font-size: 40px;
     }
 
-    /* .equipments table tr th {
+    .equipments th {
 
-        width: 100px
-
-    } */
-
-    .table td,
-    .table th {
-
-        padding: 5px;
+        width: fit-content;
+        font-size: 10px;
     }
 
-    #equ1_h img {
+    .equipments td {
+
+        width: fit-content;
+        font-size: 10px;
+    }
+
+    #equ1_h img{
 
         height: 50px;
-        width: 200px;
     }
+
+    .services_in {
+
+        margin-top:70vh
+    }
+
+    .services_in .double span{
+
+        background-color: #ffc107;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 30px;
+        
+    }
+
+    .serve_header h3 {
+
+        font-size: 40px;
+    }
+
+    .contact_header h3 {
+
+        font-size: 40px;
+    }
+
+    .header_content h3 {
+
+        font-size: 40px;
+    }
+
+    .about h5 {
+
+        font-size: 35px;
+    }
+
+    .about_detail h3{
+
+        font-size: 35px;
+    }
+
+    .mission h5 {
+
+        font-size: 35px;
+    }
+
+    .vision h5 {
+
+        font-size: 35px;
+    }
+
+    .staff h3 {
+
+        font-size: 30px;
+    }
+
+    .team_members h3 {
+        font-size: 30px;
+    }
+
+    #equ1_h {
+        display: none;
+    }
+
+    #equ {
+
+        display: none;
+    }
+
+    .safety_detail h3 {
+
+        font-size: 35px;
+    }
+
+    .project_details {
+
+        margin-bottom: 80px;
+        padding: 0 0 0 50px;
+        
+    }
+
+    .projects {
+
+        height: 1000px;
+        background-color: #06062f;
+    }
+
+    .project_details h2 {
+
+        font-size: 30px;
+    }
+
+
 }
