@@ -1662,6 +1662,16 @@ blockquote {
 
         margin-top: 110vh;
     }
+
+    .top img {
+
+        margin-left: 187px;
+    }
+
+    .image_note {
+
+        display: none;
+    }
 }
 
 
@@ -1733,15 +1743,15 @@ blockquote {
 
     .flip-card-front img {
 
-        width: 420px;
-        height: 270px;
+        width: 360px;
+        height: 220px;
 
     }
 
     .flip-card {
        
-        width: 420px;
-        height: 270px;
+        width: 360px;
+        height: 220px;
     }
 
     .imp_certificate img {
@@ -1839,12 +1849,13 @@ blockquote {
 
     .equipments {
 
-        margin-top: 70vh;
+        margin-top: 65vh;
     }
 
     .equipment_header h3 {
 
-        font-size: 40px;
+        font-size: 35px;
+        display: inline;
     }
 
     .equipments th {
@@ -1956,5 +1967,35 @@ blockquote {
         font-size: 30px;
     }
 
+    .image_note {
 
+        font-size: 8px;
+        color: darkgrey;
+    }
+
+    .image_note span {
+
+        color: red;
+    }
+
+    
+
+
+}
+
+@media only screen and (max-width: 420px) {
+
+
+    .equipments th {
+
+        width: fit-content;
+        font-size: 8px;
+    }
+
+    .equipments td {
+
+        width: fit-content;
+        font-size: 8px;
+    }
+    
 }
