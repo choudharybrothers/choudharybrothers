@@ -817,7 +817,6 @@ footer h3 {
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -840,11 +839,86 @@ footer h3 {
 
 
 .flip-card-back {
-    background-color: #2980b9;
     color: white;
     transform: rotateY(180deg);
     border-radius: 10px;
+    padding: 15px;
 }
+
+.flip-card-back p {
+
+    font-size: 15px;
+}
+
+.legal_back {
+
+    background: url(../images/legal_back.png) no-repeat center center/cover;
+}
+
+.manage_back {
+
+    background: url(../images/manage_back.png) no-repeat center center/cover;
+}
+
+.bank_back {
+
+    background: url(../images/bank_back.png) no-repeat center center/cover;
+}
+
+.legal .legal_company {
+    margin-left: 0.8rem;
+}
+
+.legal .legal_cat {
+
+    margin-left: 3.3rem;
+}
+
+.legal .legal_sub_cat {
+
+    margin-left: 1.4rem;
+}
+
+.legal .legal_gst {
+
+    margin-left: 4.5rem;
+}
+
+.legal .manage_director {
+
+    margin-left: 1rem;
+}
+
+.legal .manage_mob {
+
+    margin-left: 4.1rem;
+}
+
+.legal .manage_email {
+
+    margin-left: 6.1rem;
+}
+
+.legal .bank_name {
+
+    margin-left: 3rem;
+}
+
+.legal .bank_account {
+
+    margin-left: 4.3rem;
+}
+
+.legal .bank_ifsc {
+
+    margin-left: 3.3rem;
+}
+
+.legal .bank_user {
+
+    margin-left: 5.1rem;
+}
+
 
 /* imp certificate */
 
@@ -1450,7 +1524,7 @@ blockquote {
 
 .contact iframe {
 
-    margin-top: 520px;
+    margin-top: 480px;
 }
 
 .contact input {
@@ -1656,7 +1730,7 @@ blockquote {
 /* media queries */
 
 
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1300px) {
 
     .services {
 
@@ -1665,7 +1739,7 @@ blockquote {
 
     .top img {
 
-        margin-left: 187px;
+        margin-left: 4.7em;
     }
 
     .image_note {
@@ -1676,14 +1750,96 @@ blockquote {
 
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1299px) {
+
+    .top img {
+
+        margin-left: 1.5em;
+    }
+
+    .services {
+
+        margin-top: 110vh;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
 
 }
 
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 768px) {}
+    .services {
+
+        margin-top: 110vh;
+    }
+    .flip-card-front img {
+
+        width: 360px;
+        height: 220px;
+        
+
+    }
+
+    .flip-card {
+       
+        width: 360px;
+        height: 220px;
+        height: 220px;
+        
+    }
+
+    .legal .legal_card {
+
+        margin-top: 4%;
+    }
+
+    .top img {
+
+        margin-left: 150px;
+    }
+
+    .project_details {
+
+        padding: 0;
+    }
+
+    .projects img {
+
+        padding: 50px 80px 80px 80px;
+        height: 30em;
+    }
+
+    .top img {
+
+        margin-left: 20px;
+    }
+    .top {
+
+        background-color: #ffc107;
+    }
+    .top .navbar-collapse{
+
+        background-color: #ffc107;
+    }
+
+    .legal .col-6 {
+
+        padding: 15px;
+    }
+
+    .last_card {
+
+        padding: 10px;
+    }
+
+    
+
+
+}
 
 @media only screen and (max-width: 480px) {
 
@@ -1701,13 +1857,18 @@ blockquote {
         background-color: #ffc107;
     }
 
+    .top img {
+
+        margin: 0;
+    }
+
     .header h3 {
         font-size: 35px;
     }
 
     .quote {
 
-        margin-top: 330px;
+        margin-top: 280px;
     }
 
     .projects img {
@@ -1743,20 +1904,26 @@ blockquote {
 
     .flip-card-front img {
 
-        width: 360px;
-        height: 220px;
+        width: 87vw;
+        height: 36vh;
+        margin: 0;
+        padding: 0;
 
     }
 
     .flip-card {
        
-        width: 360px;
-        height: 220px;
+        width: 87vw;
+        height: 36vh;
+        margin: 0;
+        padding: 0;
+       
     }
 
     .imp_certificate img {
 
         margin-top: 40px;
+        height: 80vh;
     }
 
     .footer_para {
@@ -1978,6 +2145,21 @@ blockquote {
         color: red;
     }
 
+    .service_content img {
+
+        height: 50vh;
+    }
+
+    .contact iframe {
+
+        height: 40vh;
+    }
+
+    .quote {
+
+        font-size: 1.3em;
+    }
+
     
 
 
@@ -1997,5 +2179,5 @@ blockquote {
         width: fit-content;
         font-size: 8px;
     }
-    
+
 }
