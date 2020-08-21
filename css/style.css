@@ -178,7 +178,7 @@ body {
     border-radius: 30px;
     transform: scale(1.1, 1.1);
     transition: all 0.3s ease-out 0s;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
 
 .btn-sm.orange:hover {
@@ -234,14 +234,10 @@ body {
 
 /* our services */
 
-.services {
+.about img {
 
-    /* margin-top: 20%; */
-    margin-bottom: 3%;
-    /* z-index: -999; */
-    /* background: linear-gradient(rgb(5, 5, 46), rgba(0, 0, 0, 0.5)), 
-    url(https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80) center center / cover no-repeat; */
-
+    /* height: 500px; */
+    object-fit: cover;
 }
 
 
@@ -366,7 +362,7 @@ h3.double::after {
     font-family: 'Roboto Condensed', sans-serif;
     color: #414141;
     font-weight: 600;
-}
+    height: 65px}
 
 .services_card img {
 
@@ -1448,7 +1444,7 @@ img {
     max-width: 85%;
     position: relative;
     margin-bottom: 100px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     font-family: 'Roboto Condensed', sans-serif;
 
 }
@@ -1528,7 +1524,7 @@ blockquote {
 
 .contact iframe {
 
-    margin-top: 480px;
+    margin-top: 70vh;
 }
 
 .contact input {
@@ -2168,6 +2164,16 @@ blockquote {
     .quote {
 
         font-size: 1.3em;
+    }
+
+    .services_card img {
+
+        height: 250px !important;
+    }
+
+    .services_card h4 {
+
+        height: 60px;
     }
 
     
