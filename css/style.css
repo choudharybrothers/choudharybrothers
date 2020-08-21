@@ -1868,6 +1868,12 @@ blockquote {
 
     .header h3 {
         font-size: 35px;
+        display: inline;
+    }
+
+    .header h3 span {
+
+        margin: 0;
     }
 
     .quote {
