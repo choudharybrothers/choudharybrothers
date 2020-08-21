@@ -111,7 +111,10 @@ body {
 .header h5 {
 
     /* color: #fae016; */
-    font-size: 28px;
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
+    
 }
 
 .header h3 {
@@ -638,6 +641,7 @@ h3.double::after {
 .project_details {
 
     padding: 120px 70px 120px 0;
+    height: 40vh;
 }
 
 .project_details h2 {
@@ -1874,8 +1878,8 @@ blockquote {
     .projects img {
 
         width: 100%;
-        height: 35rem;
-        padding: 120px 50px 120px 50px;
+        height: 55vh;
+        padding: 50px 50px 50px 50px;
         object-fit: cover;
     }
 
@@ -1905,7 +1909,7 @@ blockquote {
     .flip-card-front img {
 
         width: 87vw;
-        height: 36vh;
+        height: 35vh;
         margin: 0;
         padding: 0;
 
@@ -1914,7 +1918,7 @@ blockquote {
     .flip-card {
        
         width: 87vw;
-        height: 36vh;
+        height: 35vh;
         margin: 0;
         padding: 0;
        
@@ -2125,7 +2129,7 @@ blockquote {
 
     .projects {
 
-        height: 1000px;
+        height: 120vh;
         background-color: #06062f;
     }
 
