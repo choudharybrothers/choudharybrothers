@@ -16,19 +16,19 @@ body {
     color: white;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25rem;
 
 }
 
 .top span {
 
     color: white;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .top img {
 
-    height: 45px;
+    height: 2.8125rem;
 }
 
 .top .dropdown-menu a:hover {
@@ -80,7 +80,7 @@ body {
 
 .navbar-nav {
 
-    margin-left: 85px;
+    margin-left: 5.3125rem;
 }
 
 .top .nav-link:hover {
@@ -90,7 +90,7 @@ body {
 
 .top .nav-link {
 
-    padding-left: 30px !important;
+    padding-left: 1.875rem !important;
     transition: all 0.3s ease-in-out;
 }
 
@@ -111,7 +111,7 @@ body {
 .header h5 {
 
     /* color: #fae016; */
-    font-size: 30px;
+    font-size: 1.875rem;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 800;
     
@@ -119,20 +119,20 @@ body {
 
 .header h3 {
 
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 800;
 }
 
 .header p {
 
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .header h3 span {
 
     color: #ffc107;
-    margin-left: 10px;
+    margin-left: 0.625rem;
     font-weight: 800;
 }
 
@@ -175,7 +175,7 @@ body {
 .btn-sm.orange {
     position: relative;
     color: #fff;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     transform: scale(1.1, 1.1);
     transition: all 0.3s ease-out 0s;
     /* margin-top: 10%; */
@@ -187,19 +187,19 @@ body {
 }
 
 .btn-sm.orange i {
-    margin-right: 15px;
+    margin-right: 0.9375rem;
     color: #fff;
 }
 
 .btn-sm.orange:before {
     content: "";
     position: absolute;
-    bottom: -8px;
-    left: 0px;
+    bottom: -0.5rem;
+    left: 0;
     width: 100%;
-    height: 10px;
-    filter: blur(20px);
-    border-radius: 30px;
+    height: 0.625rem;
+    filter: blur(1.25rem);
+    border-radius: 1.875rem;
     display: inline-block;
     z-index: -1;
     transition: all 0.3s ease-out 0s;
@@ -207,7 +207,7 @@ body {
 
 .btn-sm.orange:hover:before {
     bottom: 0;
-    filter: blur(10px);
+    filter: blur(0.625rem);
 }
 
 .btn-sm.orange {
@@ -220,7 +220,7 @@ body {
 
 @media only screen and (max-width: 767px) {
     .btn-sm {
-        margin-bottom: 15px;
+        margin-bottom: 0.9375rem;
     }
 }
 
@@ -248,7 +248,7 @@ body {
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 1000;
-    font-size: 32px;
+    font-size: 2rem;
     color: rgb(65, 65, 65);
 }
 
@@ -259,7 +259,7 @@ body {
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 1000;
-    font-size: 32px;
+    font-size: 2rem;
     color: rgb(65, 65, 65);
 }
 
@@ -282,7 +282,7 @@ h3.background::before {
 
 .double span {
     background: #fff;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
 }
 
 h2.double:before {
@@ -290,10 +290,10 @@ h2.double:before {
 }
 
 h3.double::after {
-    border-bottom: 1px solid orangered;
-    -webkit-box-shadow: 0 1px 0 0 red;
-    -moz-box-shadow: 0 1px 0 0 red;
-    box-shadow: 0 1px 0 0 red;
+    border-bottom: 0.0625rem solid orangered;
+    -webkit-box-shadow: 0 0.0625rem 0 0 red;
+    -moz-box-shadow: 0 0.0625rem 0 0 red;
+    box-shadow: 0 0.0625rem 0 0 red;
     content: "";
     margin: 0 auto;
     position: absolute;
@@ -323,7 +323,7 @@ h3.double::after {
 
 .service_content .double span {
     background: #fff;
-    padding: 0 15px;
+    padding: 0 0.9375rem;
 }
 
 .service_content h2.double:before {
@@ -331,10 +331,10 @@ h3.double::after {
 }
 
 .service_content h3.double::after {
-    border-bottom: 1px solid orangered;
-    -webkit-box-shadow: 0 1px 0 0 red;
-    -moz-box-shadow: 0 1px 0 0 red;
-    box-shadow: 0 1px 0 0 red;
+    border-bottom: 0.0625rem solid orangered;
+    -webkit-box-shadow: 0 0.0625rem 0 0 red;
+    -moz-box-shadow: 0 0.0625rem 0 0 red;
+    box-shadow: 0 0.0625rem 0 0 red;
     content: "";
     margin: 0 auto;
     position: absolute;
@@ -348,12 +348,12 @@ h3.double::after {
 
 .services_card {
 
-    border-radius: 10px;
-    margin-left: 50px;
+    border-radius: 0.625rem;
+    margin-left: 3.125rem;
     height: 400px;
-    -webkit-box-shadow: 0px 16px 73px -25px rgba(173, 173, 173, 1);
-    -moz-box-shadow: 0px 16px 73px -25px rgba(173, 173, 173, 1);
-    box-shadow: 0px 16px 73px -25px rgba(173, 173, 173, 1);
+    -webkit-box-shadow: 0px 1rem 4.5625rem -1.5625rem rgba(173, 173, 173, 1);
+    -moz-box-shadow: 0px 1rem 4.5625rem -1.5625rem rgba(173, 173, 173, 1);
+    box-shadow: 0px 1rem 4.5625rem -1.5625rem rgba(173, 173, 173, 1);
 }
 
 .services_card h4 {
@@ -362,11 +362,11 @@ h3.double::after {
     font-family: 'Roboto Condensed', sans-serif;
     color: #414141;
     font-weight: 600;
-    height: 65px}
+    height: 4.0625rem}
 
 .services_card img {
 
-    height: 250px;
+    height: 31.5vh;
     object-fit: cover;
 }
 
@@ -377,7 +377,7 @@ h3.double::after {
 }
 
 .carousel-control-prev .fa {
-    font-size: 50px;
+    font-size: 3.125rem;
     z-index: 99;
 }
 
@@ -408,7 +408,7 @@ h3.double::after {
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 1000;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .legal .row {
@@ -424,26 +424,26 @@ h3.double::after {
 
 .owl-prev {
 
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     background-color: white !important;
-    box-shadow: 3px 14px 25px -10px #92b4d0;
+    box-shadow: 0.1875rem 0.875rem 1.5625rem -0.625rem #92b4d0;
     text-align: center;
-    border-radius: 100px !important;
+    border-radius: 6.25rem !important;
 
 
 }
 
 .owl-next {
 
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     background-color: white !important;
-    box-shadow: 3px 14px 25px -10px #92b4d0;
+    box-shadow: 0.1875rem 0.875rem 1.5625rem -0.625rem #92b4d0;
     text-align: center;
-    font-size: 30px;
-    margin-left: 30px;
-    border-radius: 100px !important;
+    font-size: 1.875rem;
+    margin-left: 1.875rem;
+    border-radius: 6.25rem !important;
 
 
 }
@@ -484,8 +484,8 @@ h3.double::after {
 
 
 .owl-nav span {
-    font-size: 30px;
-    padding: 10px;
+    font-size: 1.875rem;
+    padding: 0.625rem;
 }
 
 .owl-theme .owl-controls .owl-page {
@@ -494,12 +494,12 @@ h3.double::after {
 
 .owl-theme .owl-controls .owl-page span {
     background: none repeat scroll 0 0 #869791;
-    border-radius: 50px;
+    border-radius: 3.125rem;
     display: block;
-    height: 12px;
-    margin: 5px 7px;
+    height: 0.75rem;
+    margin: 0.3125rem 0.4375rem;
     opacity: 0.5;
-    width: 12px;
+    width: 0.75rem;
 }
 
 /* about */
@@ -518,7 +518,7 @@ h3.double::after {
 
 .about h5 {
 
-    font-size: 55px;
+    font-size: 3.4375rem;
     color: rgb(65, 65, 65);
     font-family: 'Anton', sans-serif;
 
@@ -529,12 +529,12 @@ h3.double::after {
 
     font-family: 'Roboto Condensed', sans-serif;
     color: #414141;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .about_detail h3 {
 
-    font-size: 55px;
+    font-size: 3.4375rem;
     color: rgb(65, 65, 65);
     font-family: 'Anton', sans-serif;
 
@@ -544,7 +544,7 @@ h3.double::after {
 
     font-family: 'Roboto Condensed', sans-serif;
     color: #414141;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* safety */
@@ -556,7 +556,7 @@ h3.double::after {
 
 .safety_detail ul {
 
-    margin-left: 15px;
+    margin-left: 0.9375rem;
     padding: 0;
 }
 
@@ -564,19 +564,19 @@ h3.double::after {
 
     font-family: "Roboto Condensed", sans-serif;
     color: rgb(65, 65, 65);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .safety_detail h3 {
 
     font-family: 'Anton', sans-serif;
-    font-size: 65px;
+    font-size: 4.0625rem;
     color: rgb(65, 65, 65);
 }
 
 .safety_detail img {
 
-    padding: 100px 0 0 0;
+    padding: 6.25rem 0 0 0;
 }
 
 
@@ -600,27 +600,27 @@ h3.double::after {
 
 .projects .client {
 
-    margin-left: 50px;
+    margin-left: 3.125rem;
 }
 
 .projects .work {
 
-    margin-left: 45px
+    margin-left: 2.8125rem;
 }
 
 .projects .site {
 
-    margin-left: 109px
+    margin-left: 6.8125rem;
 }
 
 .projects .contract {
 
-    margin-left: 34px
+    margin-left: 2.125rem;
 }
 
 .projects .vendor {
 
-    margin-left: 59px
+    margin-left: 3.6875rem;
 }
 
 .projects h3 {
@@ -630,13 +630,13 @@ h3.double::after {
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 1000;
-    font-size: 32px;
+    font-size: 2rem;
     color: rgb(120, 159, 220);
 }
 
 .project_details {
 
-    padding: 120px 70px 120px 0;
+    padding: 7.5rem 4.375rem 7.5rem 0;
     height: 40vh;
 }
 
@@ -676,14 +676,14 @@ h3.double::after {
 
     width: 100%;
     height: 35rem;
-    padding: 120px 70px 120px 120px;
+    padding: 7.5rem 4.375rem 7.5rem 7.5rem;
     object-fit: cover;
 }
 
 .projects .type a {
 
     display: inline;
-    margin-left: 50px;
+    margin-left: 3.125rem;
 }
 
 .projects_about {
@@ -693,16 +693,16 @@ h3.double::after {
 
 .projects_about .col-md-4 {
 
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .projects_about .card {
 
-    padding: 10px;
+    padding: 0.625rem;
 
-    -webkit-box-shadow: 0px 16px 73px -25px rgba(173, 173, 173, 1);
-    -moz-box-shadow: 0px 16px 73px -25px rgba(173, 173, 173, 1);
-    box-shadow: 0px 16px 73px -25px rgba(173, 173, 173, 1);
+    -webkit-box-shadow: 0 1rem 4.5625rem -1.5625rem rgba(173, 173, 173, 1);
+    -moz-box-shadow: 0 1rem 4.5625rem -1.5625rem rgba(173, 173, 173, 1);
+    box-shadow: 0 1rem 4.5625rem -1.5625rem rgba(173, 173, 173, 1);
 }
 
 /* testimonials start */
@@ -720,7 +720,7 @@ h3.double::after {
 
 .controls-top .fa {
 
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .controls-top .fa-angle-left {
@@ -757,9 +757,9 @@ footer p {
 
     background-color: #ff5f13;
     color: white;
-    -webkit-box-shadow: 10px 15px 21px -1px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 10px 15px 21px -1px rgba(0, 0, 0, 1);
-    box-shadow: 10px 15px 21px -1px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 0.625rem 0.9375rem 1.3125rem -0.0625rem rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0.625rem 0.9375rem 1.3125rem -0.0625rem rgba(0, 0, 0, 1);
+    box-shadow: 0.625rem 0.9375rem 1.3125rem -0.0625rem rgba(0, 0, 0, 1);
 }
 
 .fa {
@@ -784,7 +784,7 @@ footer p {
 
 .footer_link a:hover {
 
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #ff5f13 !important;
 }
 
@@ -800,17 +800,17 @@ footer h3 {
 .flip-card-front img {
 
     width: 350px;
-    height: 220px;
-    border-radius: 10px;
+    height: 27.7vh;
+    border-radius: 0.625rem;
 
 }
 
 .flip-card {
     background-color: transparent;
     width: 350px;
-    height: 220px;
+    height: 27.7vh;
     perspective: 1000px;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .flip-card-inner {
@@ -819,8 +819,8 @@ footer h3 {
     height: 100%;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.625rem;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -841,13 +841,13 @@ footer h3 {
 .flip-card-back {
     color: white;
     transform: rotateY(180deg);
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 0.625rem;
+    padding: 0.9375rem;
 }
 
 .flip-card-back p {
 
-    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 .legal_back {
@@ -938,7 +938,7 @@ footer h3 {
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 1000;
-    font-size: 32px;
+    font-size: 2rem;
     color: rgb(65, 65, 65);
 }
 
@@ -961,7 +961,7 @@ footer h3 {
 }
 
 .section {
-    padding: 60px 0
+    padding: 3.75rem 0;
 }
 
 .section-title {
@@ -974,7 +974,7 @@ footer h3 {
 
 .team .team-item {
     text-align: left;
-    margin-bottom: 30px
+    margin-bottom: 1.875rem;
 }
 
 .team .team-item figure {
@@ -1003,9 +1003,9 @@ img {
     position: absolute;
     color: #fff;
     float: left;
-    bottom: 10px;
-    left: 20px;
-    margin-left: -80px;
+    bottom: 0.625rem;
+    left: 1.25rem;
+    margin-left: -5rem;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     transition: all .5s ease
@@ -1020,7 +1020,7 @@ img {
 }
 
 .team .team-item figure figcaption .info h3 {
-    font-size: 20px
+    font-size: 1.25rem
 }
 
 .team .team-item figure figcaption .info p {
@@ -1035,8 +1035,8 @@ img {
     position: absolute;
     float: right;
     bottom: 28px;
-    margin-bottom: -80px;
-    right: 20px;
+    margin-bottom: -5rem;
+    right: 1.25rem;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     transition: all .5s ease
@@ -1044,14 +1044,14 @@ img {
 
 .team .team-item figure figcaption .social a {
     color: #fff;
-    font-size: 15px;
+    font-size: 0.9375rem;
     width: 36px;
     height: 36px;
     background: #3f51b5;
     display: inline-block;
     text-align: center;
     line-height: 36px;
-    border-radius: 2px
+    border-radius: 0.125rem
 }
 
 /* our team end */
@@ -1096,7 +1096,7 @@ img {
     display: inline;
     float: left;
     margin-right: 3%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .end {
@@ -1106,24 +1106,24 @@ img {
 .noCounter {
     margin-top: 10%;
     font-family: verdana;
-    padding: 10px;
+    padding: 0.625rem;
     background: #14253f;
     color: white;
     height: 30vh;
-    border-radius: 60px 10px 60px 10px;
+    border-radius: 3.75rem 0.625rem 3.75rem 0.625rem;
 
     /* text-align: center; */
 }
 
 .wrapper {
-    margin: 30px auto;
+    margin: 1.875rem auto;
     position: relative;
 }
 
 .count-title {
     font-size: 66px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     margin-bottom: 0;
     text-align: center;
 }
@@ -1131,7 +1131,7 @@ img {
 .count-text {
     font-size: 18px;
     font-weight: light;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     margin-bottom: 0;
     text-align: center;
 }
@@ -1149,7 +1149,7 @@ img {
 
 .btn_email {
 
-    width: 120px;
+    width: 7.5rem;
     background: orangered;
     border: none;
     color: white;
@@ -1158,15 +1158,15 @@ img {
 
 .header_buttons a {
 
-    border: 2px solid orangered;
+    border: 0.125rem solid orangered;
     width: 180px;
     text-decoration: none;
     color: orangered;
     display: flex;
     justify-content: center;
-    padding: 8px;
-    font-size: 22px;
-    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1.375rem;
+    border-radius: 0.625rem;
     transition: all 0.3s ease-in-out;
 }
 
@@ -1189,8 +1189,8 @@ img {
 }
 
 #equ1_h img {
-    width: 250px;
-    height: 200px;
+    width: 31.5vh;
+    height: 25.25vh;
     object-fit: cover;
 }
 
@@ -1216,14 +1216,14 @@ img {
 
 .equipment_header h3 {
 
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 800;
 }
 
 .equipment_header span {
 
     color: #ffc107;
-    margin-left: 8px;
+    margin-left: 0.5rem;
 }
 
 .equipments thead tr {
@@ -1266,44 +1266,44 @@ img {
 
 .serve_header h3 {
 
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 800;
 }
 
 .serve_header span {
 
     color: #ffc107;
-    margin-left: 8px;
+    margin-left: 0.5rem;
 }
 
 .services_header h3 {
 
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 800;
 }
 
 .services_header span {
 
     color: #ffc107;
-    margin-left: 8px;
+    margin-left: 0.5rem;
 }
 
 .services_header p {
     font-family: 'Roboto Condensed', sans-serif;
     /* color: #414141; */
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .services_image {
 
     display: flex;
     justify-content: center;
-    padding-top: 50px 0px 0x 50px;
+    padding-top: 3.125rem 0 0 3.125rem;
 }
 
 .service_content span {
     float: left;
-    padding: 0 20px 0 0;
+    padding: 0 1.25rem 0 0;
 
 }
 
@@ -1314,7 +1314,7 @@ img {
 
 .service_carousel {
 
-    /* padding: 10px 100px 30px 100px; */
+    /* padding: 10px 6.25rem 30px 6.25rem; */
     height: 100vh
 }
 
@@ -1331,8 +1331,8 @@ img {
 
 .team_quote {
 
-    padding: 100px;
-    font-size: 22px;
+    padding: 6.25rem;
+    font-size: 1.375rem;
 }
 
 .service_content img {
@@ -1358,46 +1358,46 @@ img {
 
     font-family: 'Roboto Condensed', sans-serif;
     color: #414141;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .next_inner {
 
-    width: 20px;
-    height: 20px;
-    padding: 20px;
-    margin: 8px 0 0 2px;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 1.25rem;
+    margin: 0.5rem 0 0 0.125rem;
 
 }
 
 .prev_outer {
 
-    border: 2px solid white;
-    border-radius: 30px;
-    height: 60px;
-    width: 60px;
-    -webkit-box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
+    border: 0.125rem solid white;
+    border-radius: 1.875rem;
+    height: 3.75rem;
+    width: 3.75rem;
+    -webkit-box-shadow: 0.25rem 0.4375rem 1.875rem -0.3125rem rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0.25rem 0.4375rem 1.875rem -0.3125rem rgba(0, 0, 0, 0.75);
+    box-shadow: 0.25rem 0.4375rem 1.875rem -0.3125rem rgba(0, 0, 0, 0.75);
 }
 
 .prev_inner {
 
-    width: 20px;
-    height: 20px;
-    padding: 20px;
-    margin: 8px 2px 0 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 1.25rem;
+    margin: 0.5rem 0.125rem 0 0;
 }
 
 .next_outer {
 
-    border: 2px solid white;
-    border-radius: 30px;
-    height: 60px;
-    width: 60px;
-    -webkit-box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 4px 7px 30px -5px rgba(0, 0, 0, 0.75);
+    border: 0.125rem solid white;
+    border-radius: 1.875rem;
+    height: 3.75rem;
+    width: 3.75rem;
+    -webkit-box-shadow: 0.25rem 0.4375rem 1.875rem -0.3125rem rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0.25rem 0.4375rem 1.875rem -0.3125rem rgba(0, 0, 0, 0.75);
+    box-shadow: 0.25rem 0.4375rem 1.875rem -0.3125rem rgba(0, 0, 0, 0.75);
 }
 
 /* .services_image img {
@@ -1439,12 +1439,12 @@ img {
     text-align: center;
     font-size: 1.6rem;
     margin: auto;
-    padding: 15px;
-    border: 2px solid tomato;
+    padding: 0.9375rem;
+    border: 0.125rem solid tomato;
     max-width: 85%;
     position: relative;
-    margin-bottom: 100px;
-    /* margin-top: 100px; */
+    margin-bottom: 6.25rem;
+    /* margin-top: 6.25rem; */
     font-family: 'Roboto Condensed', sans-serif;
 
 }
@@ -1453,34 +1453,34 @@ blockquote {
     color: black;
     font-style: italic;
     position: relative;
-    padding: 30px;
+    padding: 1.875rem;
     z-index: 20;
 }
 
 .left {
     position: absolute;
-    top: -50px;
-    left: -20px;
+    top: -3.125rem;
+    left: -1.25rem;
     width: 150px;
     text-align: left;
     z-index: 10;
     font-size: 5rem;
     color: tomato;
     background-color: white;
-    line-height: 200px;
+    line-height: 25.25vh;
 }
 
 .right {
     position: absolute;
-    bottom: -50px;
-    right: -20px;
+    bottom: -3.125rem;
+    right: -1.25rem;
     width: 150px;
     text-align: right;
     z-index: 10;
     font-size: 5rem;
     color: tomato;
     background-color: white;
-    line-height: 200px;
+    line-height: 25.25vh;
 }
 
 .small {
@@ -1492,7 +1492,7 @@ blockquote {
 
 .small::before {
     content: "\2014 \0020";
-    width: 5px;
+    width: 0.3125rem;
 }
 
 /* staff diagram */
@@ -1503,7 +1503,7 @@ blockquote {
     padding-bottom: 5%;
     display: block;
     margin: auto;
-    height: 750px;
+    height: 94.6vh;
 }
 
 .staff h3 {
@@ -1513,7 +1513,7 @@ blockquote {
     text-transform: uppercase;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 1000;
-    font-size: 32px;
+    font-size: 2rem;
     color: rgb(65, 65, 65);
 }
 
@@ -1530,14 +1530,14 @@ blockquote {
 .contact input {
 
     margin-top: 3%;
-    height: 50px;
+    height: 3.125rem;
 }
 
 .contact h3 {
 
     margin-top: 5%;
     font-family: 'Anton', sans-serif;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
 
 }
 
@@ -1557,20 +1557,20 @@ blockquote {
 
 .contact_header h3 {
 
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 800;
 }
 
 .contact_header span {
 
     color: #ffc107;
-    margin-left: 8px;
+    margin-left: 0.5rem;
 }
 
 .contact_header p {
     font-family: 'Roboto Condensed', sans-serif;
     /* color: #414141; */
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .conatct textarea {
@@ -1601,7 +1601,7 @@ blockquote {
     display: flex;
     /* justify-content: center; */
     font-family: 'Anton', sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
 }
 
 .about_detail img {
@@ -1609,7 +1609,7 @@ blockquote {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 4.375rem;
 }
 
 /* .about_feature h3:first-child {
@@ -1637,20 +1637,20 @@ blockquote {
     /* background: #dadffd; */
     color: #14253f;
     margin-top: 5%;
-    border-radius: 50px;
+    border-radius: 3.125rem;
 }
 
 .about_quote p {
 
     display: flex;
     justify-content: center;
-    font-size: 35px;
-    padding: 50px 100px 50px 100px;
+    font-size: 2.1875rem;
+    padding: 3.125rem 6.25rem 3.125rem 6.25rem;
 }
 
 .about_quote i {
 
-    font-size: 50px;
+    font-size: 3.125rem;
     color: tomato;
 }
 
@@ -1663,7 +1663,7 @@ blockquote {
 
 .mission h5 {
 
-    font-size: 55px;
+    font-size: 3.4375rem;
     color: rgb(65, 65, 65);
     font-family: 'Anton', sans-serif;
 
@@ -1674,12 +1674,12 @@ blockquote {
 
     font-family: 'Roboto Condensed', sans-serif;
     color: #414141;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .mission i {
 
-    font-size: 50px;
+    font-size: 3.125rem;
     color: tomato;
 }
 
@@ -1693,7 +1693,7 @@ blockquote {
 
 .vision h5 {
 
-    font-size: 55px;
+    font-size: 3.4375rem;
     color: rgb(65, 65, 65);
     font-family: 'Anton', sans-serif;
 
@@ -1704,7 +1704,7 @@ blockquote {
 
     font-family: 'Roboto Condensed', sans-serif;
     color: #414141;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .vision img {
@@ -1715,12 +1715,12 @@ blockquote {
 .vision ul {
 
     padding: 0;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .vision ul li {
 
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
 }
 
 /* about page end */
@@ -1779,7 +1779,7 @@ blockquote {
     .flip-card-front img {
 
         width: 360px;
-        height: 220px;
+        height: 27.7vh;
         
 
     }
@@ -1787,8 +1787,8 @@ blockquote {
     .flip-card {
        
         width: 360px;
-        height: 220px;
-        height: 220px;
+        height: 27.7vh;
+        height: 27.7vh;
         
     }
 
@@ -1809,13 +1809,13 @@ blockquote {
 
     .projects img {
 
-        padding: 50px 80px 80px 80px;
+        padding: 3.125rem 5rem 5rem 5rem;
         height: 30em;
     }
 
     .top img {
 
-        margin-left: 20px;
+        margin-left: 1.25rem;
     }
     .top {
 
@@ -1828,12 +1828,12 @@ blockquote {
 
     .legal .col-6 {
 
-        padding: 15px;
+        padding: 0.9375rem;
     }
 
     .last_card {
 
-        padding: 10px;
+        padding: 0.625rem;
     }
 
     
@@ -1863,7 +1863,7 @@ blockquote {
     }
 
     .header h3 {
-        font-size: 35px;
+        font-size: 2.1875rem;
         display: inline;
     }
 
@@ -1881,13 +1881,13 @@ blockquote {
 
         width: 100%;
         height: 55vh;
-        padding: 50px 50px 50px 50px;
+        padding: 3.125rem;
         object-fit: cover;
     }
 
     .project_details {
 
-        padding: 0 0 70px 0;
+        padding: 0 0 4.375rem 0;
     }
 
     .project_details h2 {
@@ -1982,7 +1982,7 @@ blockquote {
 
     .top span i {
 
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .top .navbar-collapse{
@@ -1992,12 +1992,12 @@ blockquote {
 
     .safety_detail {
 
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
     }
 
     .legal {
 
-        margin-bottom: 100px;
+        margin-bottom: 6.25rem;
     }
 
     .header_content p {
@@ -2027,25 +2027,25 @@ blockquote {
 
     .equipment_header h3 {
 
-        font-size: 35px;
+        font-size: 2.1875rem;
         display: inline;
     }
 
     .equipments th {
 
         width: fit-content;
-        font-size: 10px;
+        font-size: 0.625rem;
     }
 
     .equipments td {
 
         width: fit-content;
-        font-size: 10px;
+        font-size: 0.625rem;
     }
 
     #equ1_h img{
 
-        height: 50px;
+        height: 3.125rem;
     }
 
     .services_in {
@@ -2060,7 +2060,7 @@ blockquote {
         display: flex;
         justify-content: center;
         color: white;
-        font-size: 30px;
+        font-size: 1.875rem;
         
     }
 
@@ -2081,31 +2081,31 @@ blockquote {
 
     .about h5 {
 
-        font-size: 35px;
+        font-size: 2.1875rem;
     }
 
     .about_detail h3{
 
-        font-size: 35px;
+        font-size: 2.1875rem;
     }
 
     .mission h5 {
 
-        font-size: 35px;
+        font-size: 2.1875rem;
     }
 
     .vision h5 {
 
-        font-size: 35px;
+        font-size: 2.1875rem;
     }
 
     .staff h3 {
 
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .team_members h3 {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     #equ1_h {
@@ -2119,13 +2119,13 @@ blockquote {
 
     .safety_detail h3 {
 
-        font-size: 35px;
+        font-size: 2.1875rem;
     }
 
     .project_details {
 
-        margin-bottom: 80px;
-        padding: 0 0 0 50px;
+        margin-bottom: 5rem;
+        padding: 0 0 0 3.125rem;
         
     }
 
@@ -2137,12 +2137,12 @@ blockquote {
 
     .project_details h2 {
 
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .image_note {
 
-        font-size: 8px;
+        font-size: 0.5rem;
         color: darkgrey;
     }
 
@@ -2168,12 +2168,12 @@ blockquote {
 
     .services_card img {
 
-        height: 250px !important;
+        height: 31.5vh !important;
     }
 
     .services_card h4 {
 
-        height: 60px;
+        height: 3.75rem;
     }
 
     
@@ -2187,13 +2187,21 @@ blockquote {
     .equipments th {
 
         width: fit-content;
-        font-size: 8px;
+        font-size: 0.5rem;
     }
 
     .equipments td {
 
         width: fit-content;
-        font-size: 8px;
+        font-size: 0.5rem;
     }
 
+}
+
+@media only screen and (max-width: 320px) {
+
+    .projects {
+
+        height: 150vh;
+    }
 }
