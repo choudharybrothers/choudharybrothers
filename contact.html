@@ -29,19 +29,20 @@
 
         color: white;
     }
-</style> 
+</style>
 <script>
     // preloader script start
-  
-    jQuery(window).on('load', function () {
-      jQuery('#preloader-active').delay(450).fadeOut('slow');
-      jQuery('body').delay(450).css({
-        'overflow': 'visible'
-      });
+
+    $(window).on('load', function () {
+        $('#preloader-active').delay(450).fadeOut('slow');
+        $('body').delay(450).css({
+            'overflow': 'visible'
+        });
     });
-  
+
     // preloader end
-  </script>
+</script>
+
 <body>
     <div class="top" id="top">
         <nav class="navbar navbar-expand-lg">
@@ -64,8 +65,10 @@
                             <a onclick="refreshCSS()" class="dropdown-item" href="about.html#about">Who we are?</a>
                             <a onclick="refreshCSS()" class="dropdown-item" href="about.html#mission">Our Mission</a>
                             <a onclick="refreshCSS()" class="dropdown-item" href="about.html#vision">Our Vision</a>
-                            <a onclick="refreshCSS()" class="dropdown-item" href="about.html#staff">Management System</a>
-                            <a onclick="refreshCSS()" class="dropdown-item" href="about.html#team_members">LIst of team members</a>
+                            <a onclick="refreshCSS()" class="dropdown-item" href="about.html#staff">Management
+                                System</a>
+                            <a onclick="refreshCSS()" class="dropdown-item" href="about.html#team_members">LIst of team
+                                members</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -281,22 +284,6 @@
 
 </body>
 <!-- navbar -->
-<script> 
-    refreshCSS = () => { 
-        let links = document.getElementsByTagName('link'); 
-        for (let i = 0; i < links.length; i++) { 
-            if (links[i].getAttribute('rel') == 'stylesheet') { 
-                let href = links[i].getAttribute('href') 
-                                        .split('?')[0]; 
-                  
-                let newHref = href + '?version='  
-                            + new Date().getMilliseconds(); 
-                  
-                links[i].setAttribute('href', newHref); 
-            } 
-        } 
-    } 
-</script>
 <script>
     // scroll show nav start
     $(document).ready(function () {
@@ -313,9 +300,25 @@
         });
     });
 
+
     // scroll show nav start end
+</script>
 
+<script>
+    refreshCSS = () => {
+        let links = document.getElementsByTagName('link');
+        for (let i = 0; i < links.length; i++) {
+            if (links[i].getAttribute('rel') == 'stylesheet') {
+                let href = links[i].getAttribute('href')
+                    .split('?')[0];
 
+                let newHref = href + '?version='
+                    + new Date().getMilliseconds();
+
+                links[i].setAttribute('href', newHref);
+            }
+        }
+    } 
 </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
