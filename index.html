@@ -10,7 +10,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=1.1">
+    <!-- <script type="text/javascript" language="javascript">
+        var versionUpdate = (new Date()).getTime();
+        var style = document.createElement("style");
+        style.type = "stylesheet";
+        style.href = "css/style.css?v=" + versionUpdate;
+        document.body.appendChild(style);  
+    </script> -->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -31,128 +38,20 @@
 
         color: white;
     }
-    /* preloader start */
-
-.preloader {
-    background-color: #f7f7f7;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 999999;
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s;
-    margin: 0 auto
-}
-
-.preloader .preloader-circle {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    border-style: solid;
-    border-width: 1px;
-    border-top-color: #ff5f13;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    z-index: 10;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
-    box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
-    background-color: #ffffff;
-    -webkit-animation: zoom 2000ms infinite ease;
-    animation: zoom 2000ms infinite ease;
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s
-}
-
-.preloader .preloader-circle2 {
-    border-top-color: #0078ff
-}
-
-.preloader .preloader-img {
-    position: absolute;
-    top: 50%;
-    z-index: 200;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding-top: 6px;
-    -webkit-transition: .6s;
-    -o-transition: .6s;
-    transition: .6s
-}
-
-.preloader .preloader-img img {
-    max-width: 80px
-}
-
-.preloader .pere-text strong {
-    font-weight: 800;
-    color: #dca73a;
-    text-transform: uppercase
-}
-
-@-webkit-keyframes zoom {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .6s;
-        -o-transition: .6s;
-        transition: .6s
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-        -webkit-transition: .6s;
-        -o-transition: .6s;
-        transition: .6s
-    }
-}
-
-@keyframes zoom {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-        -webkit-transition: .6s;
-        -o-transition: .6s;
-        transition: .6s
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-        -webkit-transition: .6s;
-        -o-transition: .6s;
-        transition: .6s
-    }
-}
-
-/* preloader end */
 </style>
 <script>
     // preloader script start
-  
+
     jQuery(window).on('load', function () {
-      jQuery('#preloader-active').delay(450).fadeOut('slow');
-      jQuery('body').delay(450).css({
-        'overflow': 'visible'
-      });
+        jQuery('#preloader-active').delay(450).fadeOut('slow');
+        jQuery('body').delay(450).css({
+            'overflow': 'visible'
+        });
     });
-  
+
     // preloader end
-  </script>
+</script>
+
 <body>
     <div class="top" id="top">
         <nav class="navbar navbar-expand-lg">
