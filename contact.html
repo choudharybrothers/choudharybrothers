@@ -29,23 +29,7 @@
 
         color: white;
     }
-</style>
-<script> 
-    refreshCSS = () => { 
-        let links = document.getElementsByTagName('link'); 
-        for (let i = 0; i < links.length; i++) { 
-            if (links[i].getAttribute('rel') == 'stylesheet') { 
-                let href = links[i].getAttribute('href') 
-                                        .split('?')[0]; 
-                  
-                let newHref = href + '?version='  
-                            + new Date().getMilliseconds(); 
-                  
-                links[i].setAttribute('href', newHref); 
-            } 
-        } 
-    } 
-</script> 
+</style> 
 <script>
     // preloader script start
   
@@ -69,7 +53,7 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home </a>
+                        <a onclick="refreshCSS()" class="nav-link active" href="index.html">Home </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -77,25 +61,25 @@
                             About Us
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" onclick="refreshCSS()" href="about.html#about">Who we are?</a>
-                            <a class="dropdown-item" onclick="refreshCSS()" href="about.html#mission">Our Mission</a>
-                            <a class="dropdown-item" onclick="refreshCSS()" href="about.html#vision">Our Vision</a>
-                            <a class="dropdown-item" onclick="refreshCSS()" href="about.html#staff">Management System</a>
-                            <a class="dropdown-item" onclick="refreshCSS()" href="about.html#team_members">LIst of team members</a>
+                            <a onclick="refreshCSS()" class="dropdown-item" href="about.html#about">Who we are?</a>
+                            <a onclick="refreshCSS()" class="dropdown-item" href="about.html#mission">Our Mission</a>
+                            <a onclick="refreshCSS()" class="dropdown-item" href="about.html#vision">Our Vision</a>
+                            <a onclick="refreshCSS()" class="dropdown-item" href="about.html#staff">Management System</a>
+                            <a onclick="refreshCSS()" class="dropdown-item" href="about.html#team_members">LIst of team members</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="refreshCSS()" href="equipment.html">Equipment </a>
+                        <a onclick="refreshCSS()" class="nav-link" href="equipment.html">Equipment </a>
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="refreshCSS()" href="index.html#projects">Projects </a>
+                        <a onclick="refreshCSS()" class="nav-link" href="index.html#projects">Projects </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="refreshCSS()" href="index.html#safety_detail">HSE Policy </a>
+                        <a onclick="refreshCSS()" class="nav-link" href="index.html#safety_detail">HSE Policy </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us </a>
@@ -297,6 +281,22 @@
 
 </body>
 <!-- navbar -->
+<script> 
+    refreshCSS = () => { 
+        let links = document.getElementsByTagName('link'); 
+        for (let i = 0; i < links.length; i++) { 
+            if (links[i].getAttribute('rel') == 'stylesheet') { 
+                let href = links[i].getAttribute('href') 
+                                        .split('?')[0]; 
+                  
+                let newHref = href + '?version='  
+                            + new Date().getMilliseconds(); 
+                  
+                links[i].setAttribute('href', newHref); 
+            } 
+        } 
+    } 
+</script>
 <script>
     // scroll show nav start
     $(document).ready(function () {
