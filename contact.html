@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=1.1">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Choudhary Brothers-Contact Us</title>
 </head>
@@ -30,6 +30,22 @@
         color: white;
     }
 </style>
+<script> 
+    refreshCSS = () => { 
+        let links = document.getElementsByTagName('link'); 
+        for (let i = 0; i < links.length; i++) { 
+            if (links[i].getAttribute('rel') == 'stylesheet') { 
+                let href = links[i].getAttribute('href') 
+                                        .split('?')[0]; 
+                  
+                let newHref = href + '?version='  
+                            + new Date().getMilliseconds(); 
+                  
+                links[i].setAttribute('href', newHref); 
+            } 
+        } 
+    } 
+</script> 
 <script>
     // preloader script start
   
@@ -61,25 +77,25 @@
                             About Us
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="about.html#about">Who we are?</a>
-                            <a class="dropdown-item" href="about.html#mission">Our Mission</a>
-                            <a class="dropdown-item" href="about.html#vision">Our Vision</a>
-                            <a class="dropdown-item" href="about.html#staff">Management System</a>
-                            <a class="dropdown-item" href="about.html#team_members">LIst of team members</a>
+                            <a class="dropdown-item" onclick="refreshCSS()" href="about.html#about">Who we are?</a>
+                            <a class="dropdown-item" onclick="refreshCSS()" href="about.html#mission">Our Mission</a>
+                            <a class="dropdown-item" onclick="refreshCSS()" href="about.html#vision">Our Vision</a>
+                            <a class="dropdown-item" onclick="refreshCSS()" href="about.html#staff">Management System</a>
+                            <a class="dropdown-item" onclick="refreshCSS()" href="about.html#team_members">LIst of team members</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="equipment.html">Equipment </a>
+                        <a class="nav-link" onclick="refreshCSS()" href="equipment.html">Equipment </a>
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#projects">Projects </a>
+                        <a class="nav-link" onclick="refreshCSS()" href="index.html#projects">Projects </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#safety_detail">HSE Policy </a>
+                        <a class="nav-link" onclick="refreshCSS()" href="index.html#safety_detail">HSE Policy </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us </a>
