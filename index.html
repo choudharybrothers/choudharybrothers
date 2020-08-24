@@ -32,7 +32,18 @@
         color: white;
     }
 </style>
-
+<script>
+    // preloader script start
+  
+    jQuery(window).on('load', function () {
+      jQuery('#preloader-active').delay(450).fadeOut('slow');
+      jQuery('body').delay(450).css({
+        'overflow': 'visible'
+      });
+    });
+  
+    // preloader end
+  </script>
 <body>
     <div class="top" id="top">
         <nav class="navbar navbar-expand-lg">
@@ -1340,18 +1351,6 @@
 </body>
 <!-- navbar -->
 <script>
-
-    // preloader script start
-
-    jQuery(window).on('load', function () {
-        jQuery('#preloader-active').delay(450).fadeOut('slow');
-        jQuery('body').delay(450).css({
-            'overflow': 'visible'
-        });
-    });
-
-    // preloader end
-
     // scroll show nav start
 
     $(document).ready(function () {

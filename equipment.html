@@ -30,7 +30,18 @@
     color: white;
   }
 </style>
+<script>
+  // preloader script start
 
+  jQuery(window).on('load', function () {
+    jQuery('#preloader-active').delay(450).fadeOut('slow');
+    jQuery('body').delay(450).css({
+      'overflow': 'visible'
+    });
+  });
+
+  // preloader end
+</script>
 <body>
   <div class="top" id="top">
     <nav class="navbar navbar-expand-lg">
@@ -79,14 +90,14 @@
   </div>
   <div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
-        <div class="preloader-inner position-relative">
-            <div class="preloader-circle"></div>
-            <div class="preloader-img pere-text">
-                <img src="images/cb_logo.png" alt="">
-            </div>
+      <div class="preloader-inner position-relative">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img pere-text">
+          <img src="images/cb_logo.png" alt="">
         </div>
+      </div>
     </div>
-</div>
+  </div>
   <div class="equipment_header" id="header" style="height: 60%;">
     <div class="container">
       <div class="header_content">
@@ -318,24 +329,24 @@
     <!-- Footer Links -->
     <div class="container text-center text-md-left">
 
-        <!-- Footer links -->
-        <div class="row text-center text-md-left mt-3 pb-3">
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
 
-            <!-- Grid column -->
-            <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mt-8">
-                <h3 class=" mb-4 font-weight-bold">Choudhary Brothers</h3>
-                <p>To deliver 'JUST IN TIME" needs of job seekers, search and
-                    staffing services to our Clients, based on an intimate understanding
-                    of their needs to enable them to have A "Competitive Edge" with a
-                    strong emphasis on quality. We help our clients in recruitment process
-                    and provide industry best staffing services in terms of manpower</p>
-            </div>
-            <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-8 col-lg-8 col-xl-8 mx-auto mt-8">
+          <h3 class=" mb-4 font-weight-bold">Choudhary Brothers</h3>
+          <p>To deliver 'JUST IN TIME" needs of job seekers, search and
+            staffing services to our Clients, based on an intimate understanding
+            of their needs to enable them to have A "Competitive Edge" with a
+            strong emphasis on quality. We help our clients in recruitment process
+            and provide industry best staffing services in terms of manpower</p>
+        </div>
+        <!-- Grid column -->
 
-            <hr class="w-100 clearfix d-md-none">
+        <hr class="w-100 clearfix d-md-none">
 
-            <!-- Grid column -->
-            <!-- <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 footer_link">
+        <!-- Grid column -->
+        <!-- <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 footer_link">
                 <h3 class="mb-4 font-weight-bold">Quick links</h3>
                 <p>
                     <a href="#header">Home</a>
@@ -354,42 +365,42 @@
                 </p>
             </div> -->
 
-            <!-- Grid column -->
-            <hr class="w-100 clearfix d-md-none">
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
 
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-8">
-                <h3 class="mb-4 font-weight-bold">Contact</h3>
-                <p>
-                    <i class="fa fa-home mr-3"></i> Had Office:- ParvatiNagar, Sangariya By passPal SideRoad,
-                    Jodhpur, Rajasthan 342013</p>
-                <p>
-                    <i class="fa fa-envelope mr-3"></i> choudharybrothers9999@gmail.com</p>
-                <p>
-                    <i class="fa fa-phone mr-3"></i> +91 6350406621
-                </p>
-            </div>
-            <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-8">
+          <h3 class="mb-4 font-weight-bold">Contact</h3>
+          <p>
+            <i class="fa fa-home mr-3"></i> Had Office:- ParvatiNagar, Sangariya By passPal SideRoad,
+            Jodhpur, Rajasthan 342013</p>
+          <p>
+            <i class="fa fa-envelope mr-3"></i> choudharybrothers9999@gmail.com</p>
+          <p>
+            <i class="fa fa-phone mr-3"></i> +91 6350406621
+          </p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Footer links -->
+
+      <hr>
+
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8">
 
         </div>
-        <!-- Footer links -->
+        <!-- Grid column -->
 
-        <hr>
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
 
-        <!-- Grid row -->
-        <div class="row d-flex align-items-center">
-
-            <!-- Grid column -->
-            <div class="col-md-7 col-lg-8">
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-5 col-lg-4 ml-lg-0">
-
-                <!-- Social buttons -->
-                <!-- <div class="text-center text-md-right">
+          <!-- Social buttons -->
+          <!-- <div class="text-center text-md-right">
                     <ul class="list-unstyled list-inline">
                         <li class="list-inline-item">
                             <a class="btn-floating btn-sm mx-1">
@@ -414,32 +425,21 @@
                     </ul>
                 </div> -->
 
-            </div>
-            <!-- Grid column -->
-
         </div>
-        <!-- Grid row -->
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
 
     </div>
     <!-- Footer Links -->
 
-</footer>
+  </footer>
   <!-- Footer -->
 
 </body>
 <!-- navbar -->
 <script>
-
-  // preloader script start
-
-  jQuery(window).on('load', function () {
-        jQuery('#preloader-active').delay(450).fadeOut('slow');
-        jQuery('body').delay(450).css({
-            'overflow': 'visible'
-        });
-    });
-
-    // preloader end
 
   // scroll show nav start
 
