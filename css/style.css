@@ -114,7 +114,7 @@ body {
     font-size: 1.875rem;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 800;
-    
+
 }
 
 .header h3 {
@@ -228,7 +228,111 @@ body {
 
 /* preloader start */
 
+.preloader {
+    background-color: #f7f7f7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+    margin: 0 auto
+}
 
+.preloader .preloader-circle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: #ff5f13;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    box-shadow: 0 1px 5px 0 rgba(35, 181, 185, 0.15);
+    background-color: #ffffff;
+    -webkit-animation: zoom 2000ms infinite ease;
+    animation: zoom 2000ms infinite ease;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s
+}
+
+.preloader .preloader-circle2 {
+    border-top-color: #0078ff
+}
+
+.preloader .preloader-img {
+    position: absolute;
+    top: 50%;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-top: 6px;
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s
+}
+
+.preloader .preloader-img img {
+    max-width: 80px
+}
+
+.preloader .pere-text strong {
+    font-weight: 800;
+    color: #dca73a;
+    text-transform: uppercase
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s
+    }
+}
+
+@keyframes zoom {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -webkit-transition: .6s;
+        -o-transition: .6s;
+        transition: .6s
+    }
+}
 
 /* preloader end */
 
@@ -362,7 +466,8 @@ h3.double::after {
     font-family: 'Roboto Condensed', sans-serif;
     color: #414141;
     font-weight: 600;
-    height: 4.0625rem}
+    height: 4.0625rem
+}
 
 .services_card img {
 
@@ -946,6 +1051,7 @@ footer h3 {
 
     margin-top: 5%;
     margin-bottom: 5%;
+
 }
 
 .team_members thead th {
@@ -1582,6 +1688,11 @@ blockquote {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.contact .orange {
+
+    margin: 5% 0 5% 0;
+}
+
 
 
 /* contact us end */
@@ -1764,10 +1875,7 @@ blockquote {
 }
 
 
-@media only screen and (max-width: 1024px) {
-
-
-}
+@media only screen and (max-width: 1024px) {}
 
 
 @media only screen and (max-width: 768px) {
@@ -1776,20 +1884,21 @@ blockquote {
 
         margin-top: 110vh;
     }
+
     .flip-card-front img {
 
         width: 360px;
         height: 27.7vh;
-        
+
 
     }
 
     .flip-card {
-       
+
         width: 360px;
         height: 27.7vh;
         height: 27.7vh;
-        
+
     }
 
     .legal .legal_card {
@@ -1817,11 +1926,13 @@ blockquote {
 
         margin-left: 1.25rem;
     }
+
     .top {
 
         background-color: #ffc107;
     }
-    .top .navbar-collapse{
+
+    .top .navbar-collapse {
 
         background-color: #ffc107;
     }
@@ -1836,7 +1947,7 @@ blockquote {
         padding: 0.625rem;
     }
 
-    
+
 
 
 }
@@ -1911,25 +2022,25 @@ blockquote {
     .flip-card-front img {
 
         width: 87vw;
-        height: 35vh;
+        height: 30vh;
         margin: 0;
         padding: 0;
 
     }
 
     .flip-card {
-       
+
         width: 87vw;
-        height: 35vh;
+        height: 30vh;
         margin: 0;
         padding: 0;
-       
+
     }
 
     .imp_certificate img {
 
         margin-top: 40px;
-        height: 80vh;
+        height: 70vh;
     }
 
     .footer_para {
@@ -1937,7 +2048,7 @@ blockquote {
         width: 100%;
     }
 
-    .services h3 span{
+    .services h3 span {
 
         background-color: #ffc107;
         width: 100%;
@@ -1985,7 +2096,7 @@ blockquote {
         font-size: 1.875rem;
     }
 
-    .top .navbar-collapse{
+    .top .navbar-collapse {
 
         background-color: #ffc107;
     }
@@ -2043,17 +2154,17 @@ blockquote {
         font-size: 0.625rem;
     }
 
-    #equ1_h img{
+    #equ1_h img {
 
         height: 3.125rem;
     }
 
     .services_in {
 
-        margin-top:70vh
+        margin-top: 70vh
     }
 
-    .services_in .double span{
+    .services_in .double span {
 
         background-color: #ffc107;
         width: 100%;
@@ -2061,7 +2172,7 @@ blockquote {
         justify-content: center;
         color: white;
         font-size: 1.875rem;
-        
+
     }
 
     .serve_header h3 {
@@ -2084,7 +2195,7 @@ blockquote {
         font-size: 2.1875rem;
     }
 
-    .about_detail h3{
+    .about_detail h3 {
 
         font-size: 2.1875rem;
     }
@@ -2126,7 +2237,7 @@ blockquote {
 
         margin-bottom: 5rem;
         padding: 0 0 0 3.125rem;
-        
+
     }
 
     .projects {
@@ -2176,7 +2287,7 @@ blockquote {
         height: 3.75rem;
     }
 
-    
+
 
 
 }
@@ -2194,6 +2305,59 @@ blockquote {
 
         width: fit-content;
         font-size: 0.5rem;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    .imp_certificate img {
+
+        margin-top: 40px;
+        height: 55vh;
+    }
+
+    .flip-card-front img {
+
+        width: 87vw;
+        height: 27vh;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .flip-card {
+
+        width: 87vw;
+        height: 27vh;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .projects img {
+
+        width: 100%;
+        height: 42vh;
+        padding: 3.125rem;
+        object-fit: cover;
+    }
+
+    .equipments th {
+
+        width: fit-content;
+        font-size: 0.5rem;
+    }
+
+    .equipments td {
+
+        width: fit-content;
+        font-size: 0.4rem;
+    }
+
+    .service_content img {
+
+        height: 40vh;
     }
 
 }

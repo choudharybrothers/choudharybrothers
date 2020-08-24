@@ -11,8 +11,8 @@
     href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>Welcome</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <title>Choudhary Brothers-Equipments</title>
 </head>
 <style>
   html {
@@ -77,6 +77,16 @@
       </div>
     </nav>
   </div>
+  <div id="preloader-active">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="images/cb_logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
   <div class="equipment_header" id="header" style="height: 60%;">
     <div class="container">
       <div class="header_content">
@@ -420,6 +430,17 @@
 <!-- navbar -->
 <script>
 
+  // preloader script start
+
+  jQuery(window).on('load', function () {
+        jQuery('#preloader-active').delay(450).fadeOut('slow');
+        jQuery('body').delay(450).css({
+            'overflow': 'visible'
+        });
+    });
+
+    // preloader end
+
   // scroll show nav start
 
   $(document).ready(function () {
@@ -441,7 +462,7 @@
 
 </script>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
