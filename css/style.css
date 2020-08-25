@@ -225,6 +225,43 @@ body {
 }
 
 /* button end */
+
+/* download button  */
+.download-button {
+    background-color: #ffc107;
+    color: orangered;
+    padding: 2em 2em;
+    height: 1em; 
+    width: 1em;
+    border-radius: 100%;
+    bottom: 2rem;
+    right: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:0px 0px 113px -18px rgba(0,0,0,0.75);
+    z-index: 999;
+  }
+  .download-button, .download-button__icon {
+    transition: all 0.5s ease-in-out;
+
+  }
+
+  .download-button a {
+
+    text-decoration: none;
+  }
+  
+  .download-button:hover {
+    transform: scale(0.9);
+    box-shadow: 0px 0px 0px 2px orangered, 0px 0px 0px 12px #ffc107;
+    cursor: pointer;
+  }
+  
+  .download-button:hover .download-button__icon {
+    transform:scale(1.5);
+  }
+
 /* preloader start */
 
 .preloader {
@@ -352,6 +389,7 @@ body {
     font-weight: 1000;
     font-size: 2rem;
     color: rgb(65, 65, 65);
+    margin-bottom: 3%;
 }
 
 .service_content h3 {
@@ -364,6 +402,12 @@ body {
     font-size: 2rem;
     color: rgb(65, 65, 65);
 }
+
+/* .services_card img:hover {
+
+    height: 500px;
+    transition: all 0.3s ease-in-out;
+} */
 
 h3.background {
     position: relative;
@@ -453,9 +497,9 @@ h3.double::after {
     border-radius: 0.625rem;
     margin-left: 3.125rem;
     height: 400px;
-    -webkit-box-shadow: 0px 1rem 4.5625rem -1.5625rem rgba(173, 173, 173, 1);
-    -moz-box-shadow: 0px 1rem 4.5625rem -1.5625rem rgba(173, 173, 173, 1);
-    box-shadow: 0px 1rem 4.5625rem -1.5625rem rgba(173, 173, 173, 1);
+    -webkit-box-shadow: 0px 1rem 3rem -2rem rgba(173, 173, 173, 1);
+    -moz-box-shadow: 0px 1rem 3rem -2rem rgba(173, 173, 173, 1);
+    box-shadow: 0px 1rem 3rem -2rem rgba(173, 173, 173, 1);
 }
 
 .services_card h4 {
@@ -486,16 +530,16 @@ h3.double::after {
 
 /* owl carousel in index */
 
-.owl-carousel {
+.services.owl-carousel {
 
     z-index: -1;
     margin-top: 5%;
 }
 
 
-.owl-carousel .owl-stage-outer {
+.services .owl-carousel .owl-stage-outer {
 
-    height: 440px;
+    height: 450px;
 
 
     /* padding: 50px; */
@@ -750,6 +794,7 @@ h3.double::after {
     font-family: 'Open Sans Condensed', sans-serif;
     color: rgb(120, 159, 220);
     font-weight: 700;
+    font-size: 24px;
 }
 
 .project_title {
@@ -1433,6 +1478,24 @@ img {
     overflow: visible;
 }
 
+.services_in h2 {
+
+    display: flex;
+    /* text-transform: uppercase; */
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(120, 159, 220);
+    font-weight: 700;
+    font-size: 28px;
+    color: rgb(65, 65, 65);
+}
+
+.services_in p {
+
+    color: rgb(65, 65, 65);
+    font-size: 1.25rem;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
 .team_quote {
 
     padding: 6.25rem;
@@ -1480,13 +1543,14 @@ img {
     border-radius: 1.875rem;
     height: 3.75rem;
     width: 3.75rem;
+    position: absolute;
     -webkit-box-shadow: 0.25rem 0.4375rem 1.875rem -0.3125rem rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0.25rem 0.4375rem 1.875rem -0.3125rem rgba(0, 0, 0, 0.75);
     box-shadow: 0.25rem 0.4375rem 1.875rem -0.3125rem rgba(0, 0, 0, 0.75);
 }
 
 .prev_inner {
-
+    position: absolute;
     width: 1.25rem;
     height: 1.25rem;
     padding: 1.25rem;

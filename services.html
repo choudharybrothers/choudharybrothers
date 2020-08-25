@@ -10,7 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css?v=1.1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Choudhary Brothers-Services</title>
 </head>
@@ -32,16 +34,17 @@
 </style>
 <script>
     // preloader script start
-  
+
     jQuery(window).on('load', function () {
-      jQuery('#preloader-active').delay(450).fadeOut('slow');
-      jQuery('body').delay(450).css({
-        'overflow': 'visible'
-      });
+        jQuery('#preloader-active').delay(450).fadeOut('slow');
+        jQuery('body').delay(450).css({
+            'overflow': 'visible'
+        });
     });
-  
+
     // preloader end
-  </script>
+</script>
+
 <body>
     <div class="top" id="top">
         <nav class="navbar navbar-expand-lg">
@@ -54,6 +57,9 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services </a>
+                    </li>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -69,17 +75,14 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="equipment.html">Equipment </a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="index.html#projects">Projects </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services </a>
+                        <a class="nav-link" href="index.html#safety_detail">HSE Policy </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#safety_detail">HSE Policy </a>
+                        <a class="nav-link" href="equipment.html">Equipment </a>
+                    </li>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us </a>
@@ -98,6 +101,10 @@
             </div>
         </div>
     </div>
+    <div class="position-fixed download-button">
+        <a target="_blank" href="file/company_profile.pdf"><i style="color: white;"
+                class="fa fa-2x fa-arrow-down download-button__icon"></i></a>
+    </div>
     <div class="serve_header" id="header" style="height: 60%;">
         <div class="container">
             <div class="header_content">
@@ -110,248 +117,211 @@
     </div>
     <div class="services_in" id="services_in">
         <div class="container">
-            <div id="carouselExampleInterval" class="carousel slide service_carousel service_carousel" data-ride="carousel">
-                <!-- <ol class="carousel-indicators" style="background-color: tomato;">
-                    <li data-target="#carouselExampleInterval" data-slide-to="0"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="3"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="4"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="5"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="6"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="7"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="8"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="9"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="10"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="11"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="12"></li>
-                    <li data-target="#carouselExampleInterval" data-slide-to="13"></li>
-                </ol> -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="10000" id="service1">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Civil Construction Work</span></h3>
-                           <img src="images/service1.jpg" alt="">
-                           <h2>What we offer</h2>
-                           <p>
-                                We, 5. E. - have gained in the industry, remains our status as
-                                prominent service provider of Civil Construction Work. Our
-                                service providers are highly experienced in the domain of
-                                construction that are selected after a test for checking their
-                                ability & knowledge due to which they provide the excellent
-                                service to our esteemed clients. We offer this service using
-                                high-grade tools and other raw material to construct various
-                                buildings as per the set industry standards. Moreover, we
-                                provide these services as per the specifications provided by the
-                                clients.
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item" data-interval="2000" id="service2" >
-                        <div class="service_content">
-                            <h3 class="background double"><span>Building COnstruction</span></h3>
-                            <img src="images/service2.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                With the assistance of our adroit professionals, we are
-                                engaged in providing Building Construction. These services are
-                                rendered by our professionals keeping in mind precise
-                                requirements of clients. In order to render these services, our
-                                skilled professionals use advanced techniques and best quality
-                                raw material. Our offered services are appreciated for timely
-                                execution and hassle free management.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item" id="service3">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Earth Work & Leveling Work</span></h3>
-                            <img src="images/service3.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                With the assistance of our adroit professionals, we are
-                                engaged in providing Building Construction. These services are
-                                rendered by our professionals keeping in mind precise
-                                requirements of clients. In order to render these services, our
-                                skilled professionals use advanced techniques and best quality
-                                raw material. Our offered services are appreciated for timely
-                                execution and hassle free management.
-                            <h2>What We Do :-</h2>
-                            <ul>
-                                <li>
-                                    <p>Backfilling & Water cartage.</p>
-                                </li>
-                                <li>
-                                    <p>Grading and erosion control.</p>
-                                </li>
-                                <li>
-                                    <p>Excavation in all type of strata.</p>
-                                </li>
-                                <li>
-                                    <p>Site Preparation / Land cleaning.</p>
-                                </li>
-                                <li>
-                                    <p>Environmentally responsible waste removal.</p>
-                                </li>
-                            </ul>
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="carousel-item" id="service4">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Man Power Supply</span></h3>
-                        <img src="images/service4.jpg" alt="">
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="service_content">
+                        <h3 class="background double"><span>Civil Construction Work</span></h3>
+                        <img src="images/service1.jpg" alt="">
                         <h2>What we offer</h2>
-                           <p>
-                                We are provide skilled manpower, we are able to offer our clients
-                                complete solution for Manpower Supply. Our organization is
-                                supported by skilled and experienced personnel, who enable us
-                                to meet the exact specification of clients. Apart from this, the
-                                strong technical background of our personnel helps us to meet
-                                the maximum client satisfaction. We ensure our clients for timely
-                                execution and quality based services.
-                            </p>
-                            <table class="table table-bordered">
-                                <tbody>
-                                    <tr>
-                                        <td>Engineer</td>
-                                        <td>Welder</td>
-                                        <td>Driver</td>
-                                        <td>Helper</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Technical Staff</td>
-                                        <td>Foreman</td>
-                                        <td>Gardner</td>
-                                        <td>Other Skill Worker </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Rigger</td>
-                                        <td>Machine Operators</td>
-                                        <td>Watchman</td>
-                                        <td>Unskilled Worker</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <p>
+                            We, 5. E. - have gained in the industry, remains our status as
+                            prominent service provider of Civil Construction Work. Our
+                            service providers are highly experienced in the domain of
+                            construction that are selected after a test for checking their
+                            ability & knowledge due to which they provide the excellent
+                            service to our esteemed clients. We offer this service using
+                            high-grade tools and other raw material to construct various
+                            buildings as per the set industry standards. Moreover, we
+                            provide these services as per the specifications provided by the
+                            clients.
+                        </p>
+
                     </div>
-                    <div class="carousel-item" id="service5">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Street Light Pole</span></h3>
-                            <img src="images/service5.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                Clients can avail from us excellent quality Street Light Poles,
-                                which are highly energy efficient. These Street Light Poles
-                                are manufactured by our skilled workmen using quality
-                                material & employing advanced methodologies. Features like
-                                durability, easy installation & low maintenance further adds
-                                to the quality of our offered products.
-                            </p>
-                        </div>
+                    <div class="service_content">
+                        <h3 class="background double"><span>Building COnstruction</span></h3>
+                        <img src="images/service2.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            With the assistance of our adroit professionals, we are
+                            engaged in providing Building Construction. These services are
+                            rendered by our professionals keeping in mind precise
+                            requirements of clients. In order to render these services, our
+                            skilled professionals use advanced techniques and best quality
+                            raw material. Our offered services are appreciated for timely
+                            execution and hassle free management.
+                        </p>
                     </div>
-                    <div class="carousel-item" id="service6">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Electric Cabling Work</span></h3>
-                            <img src="images/service6.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                We provide the services of Electrical Contractor for Cabling
-                                Works including supply & Installation of Cable Tray work
-                                along with accessories at Residential complex. Clients can
-                                avail these Electrical Contractor for Cabling Works at compe￾titive prices with us.
+                    <div class="service_content">
+                        <h3 class="background double"><span>Earth Work & Leveling Work</span></h3>
+                        <img src="images/service3.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            With the assistance of our adroit professionals, we are
+                            engaged in providing Building Construction. These services are
+                            rendered by our professionals keeping in mind precise
+                            requirements of clients. In order to render these services, our
+                            skilled professionals use advanced techniques and best quality
+                            raw material. Our offered services are appreciated for timely
+                            execution and hassle free management.
+                        <h2>What We Do :-</h2>
+                        <ul>
+                            <li>
+                                <p>Backfilling & Water cartage.</p>
+                            </li>
+                            <li>
+                                <p>Grading and erosion control.</p>
+                            </li>
+                            <li>
+                                <p>Excavation in all type of strata.</p>
+                            </li>
+                            <li>
+                                <p>Site Preparation / Land cleaning.</p>
+                            </li>
+                            <li>
+                                <p>Environmentally responsible waste removal.</p>
+                            </li>
+                        </ul>
+                        </p>
 
-                            </p>
-                        </div>
-                    </div> 
-                    <div class="carousel-item" id="service7">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Electrical Instrumentation Services</span></h3>
-                            <img src="images/service7.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                Ours' is a renowned organization, which is engaged in
-                                rendering optimum Electrical Instrumentation Services.
-                                These services are rendered by our highly experienced engin￾eers keeping in mind the
-                                exact requirements of customers.
-                                We employ advanced tools and equipment for executing the
-                                offered instrumentation service.
-
-                            </p>
-                        </div>
                     </div>
-                    <div class="carousel-item" id="service8">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Electrical Maintenance Services</span></h3>
-                            <img src="images/service8.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                We have earned immense acknowledgment in providing
-                                Electrical Maintenance Services as per the clients requirement
-                                in most economic manner. These services are widely catered
-                                in all residential as well as commercial buildings. Our trained
-                                technicians have rich experience which helps us in designing.
-
-                            </p>
-                        </div>
+                    <div class="service_content">
+                        <h3 class="background double"><span>Man Power Supply</span></h3>
+                        <img src="images/service4.jpg" id="service4" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            We are provide skilled manpower, we are able to offer our clients
+                            complete solution for Manpower Supply. Our organization is
+                            supported by skilled and experienced personnel, who enable us
+                            to meet the exact specification of clients. Apart from this, the
+                            strong technical background of our personnel helps us to meet
+                            the maximum client satisfaction. We ensure our clients for timely
+                            execution and quality based services.
+                        </p>
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Engineer</td>
+                                    <td>Welder</td>
+                                    <td>Driver</td>
+                                    <td>Helper</td>
+                                </tr>
+                                <tr>
+                                    <td>Technical Staff</td>
+                                    <td>Foreman</td>
+                                    <td>Gardner</td>
+                                    <td>Other Skill Worker </td>
+                                </tr>
+                                <tr>
+                                    <td>Rigger</td>
+                                    <td>Machine Operators</td>
+                                    <td>Watchman</td>
+                                    <td>Unskilled Worker</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="carousel-item" id="service9">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Electrical Engineering Services</span></h3>
-                            <img src="images/service9.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                With our experience in the industry, we are able to offer our
-                                clients Electrical Engineering Services in an efficient manner.
-                                Offered services are rendered under the supervision of our
-                                experts, who are highly experienced in their domain. They
-                                can easily analyze and eliminate any electrical problems that
-                                the industrial and commercial sectors.
-
-
-                            </p>
-                        </div>
+                    <div class="service_content">
+                        <h3 class="background double"><span>Street Light Pole</span></h3>
+                        <img src="images/service5.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            Clients can avail from us excellent quality Street Light Poles,
+                            which are highly energy efficient. These Street Light Poles
+                            are manufactured by our skilled workmen using quality
+                            material & employing advanced methodologies. Features like
+                            durability, easy installation & low maintenance further adds
+                            to the quality of our offered products.
+                        </p>
                     </div>
-                    <div class="carousel-item" id="service10">
-                        <div class="service_content">
-                            <h3 class="background double"><span>DG Power / Gen on Hire</span></h3>
-                            <img src="images/service10.png" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                As the best service provider of equipment hiring in India, we
-                                firmly believe in offering these promptly as per the
-                                requirements of our valuable customers. We offer our
-                                products and services at the most competitive rates. We with
-                                our dedication and client centric approach is able to be among
-                                the leading generator hire supplier. We take utmost care to
-                                ensure best service in the stipulated time frame to our
-                                valuable clients.
+                    <div class="service_content">
+                        <h3 class="background double"><span>Electric Cabling Work</span></h3>
+                        <img src="images/service6.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            We provide the services of Electrical Contractor for Cabling
+                            Works including supply & Installation of Cable Tray work
+                            along with accessories at Residential complex. Clients can
+                            avail these Electrical Contractor for Cabling Works at compe￾titive prices with us.
 
-
-                            </p>
-                        </div>
+                        </p>
                     </div>
-                    <div class="carousel-item" id="service11">
-                        <div class="service_content">
-                            <h3 class="background double"><span>All Types of Solar Foundation Work</span></h3>
-                            <img src="images/service11.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                We are also providing Cabling Structure Foundation Work to
-                                our client's as per their specification & requirement. These
-                                services offered at reasonable prices.
-                            <h2>Installation of Solar PV MOdule</h2>
-                            <p>With a firm commitment to quality, we are offering installation
+                    <div class="service_content">
+                        <h3 class="background double"><span>Electrical Instrumentation Services</span></h3>
+                        <img src="images/service7.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            Ours' is a renowned organization, which is engaged in
+                            rendering optimum Electrical Instrumentation Services.
+                            These services are rendered by our highly experienced engin￾eers keeping in mind the
+                            exact requirements of customers.
+                            We employ advanced tools and equipment for executing the
+                            offered instrumentation service.
+
+                        </p>
+                    </div>
+                    <div class="service_content">
+                        <h3 class="background double"><span>Electrical Maintenance Services</span></h3>
+                        <img src="images/service8.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            We have earned immense acknowledgment in providing
+                            Electrical Maintenance Services as per the clients requirement
+                            in most economic manner. These services are widely catered
+                            in all residential as well as commercial buildings. Our trained
+                            technicians have rich experience which helps us in designing.
+
+                        </p>
+                    </div>
+                    <div class="service_content">
+                        <h3 class="background double"><span>Electrical Engineering Services</span></h3>
+                        <img src="images/service9.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            With our experience in the industry, we are able to offer our
+                            clients Electrical Engineering Services in an efficient manner.
+                            Offered services are rendered under the supervision of our
+                            experts, who are highly experienced in their domain. They
+                            can easily analyze and eliminate any electrical problems that
+                            the industrial and commercial sectors.
+
+
+                        </p>
+                    </div>
+                    <div class="service_content">
+                        <h3 class="background double"><span>DG Power / Gen on Hire</span></h3>
+                        <img src="images/service10.png" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            As the best service provider of equipment hiring in India, we
+                            firmly believe in offering these promptly as per the
+                            requirements of our valuable customers. We offer our
+                            products and services at the most competitive rates. We with
+                            our dedication and client centric approach is able to be among
+                            the leading generator hire supplier. We take utmost care to
+                            ensure best service in the stipulated time frame to our
+                            valuable clients.
+
+
+                        </p>
+                    </div>
+                    <div class="service_content">
+                        <h3 class="background double"><span>All Types of Solar Foundation Work</span></h3>
+                        <img src="images/service11.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            We are also providing Cabling Structure Foundation Work to
+                            our client's as per their specification & requirement. These
+                            services offered at reasonable prices.
+                        <h2>Installation of Solar PV MOdule</h2>
+                        <p>With a firm commitment to quality, we are offering installation
                             and maintenance services for Solar PV Modules. We render these
                             services as per the requirement and specifications of the
                             customers. In addition to this, we have relevant knowledge about
                             these solar modules and how to install these at right places so as
                             to get proper amount of sun light. Customers can avail these
                             services at market leading prices.</p>
-                            <h2>Solar Lighting Works</h2>
-                            <p>We are offering Solar Lighting Works to our clients. These works
+                        <h2>Solar Lighting Works</h2>
+                        <p>We are offering Solar Lighting Works to our clients. These works
                             are accomplished by experts using best tools and components.
                             These works are hailed for their quality and are finished in timely
                             manner.</p>
@@ -359,106 +329,88 @@
 
 
 
-                            </p>
-                        </div>
+                        </p>
                     </div>
-                    <div class="carousel-item" id="service12">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Oil Field Services</span></h3>
-                            <img src="images/service12.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                We also offer most reliable services of Oil Field Projects Services, Such
-                                as :- Filed guidelines, Site mapping, Man power, Vehicles, Catering etc
-                                services provide in fast time & full support of Oil & Gas Field projects
-                                company's.
+                    <div class="service_content">
+                        <h3 class="background double"><span>Oil Field Services</span></h3>
+                        <img src="images/service12.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            We also offer most reliable services of Oil Field Projects Services, Such
+                            as :- Filed guidelines, Site mapping, Man power, Vehicles, Catering etc
+                            services provide in fast time & full support of Oil & Gas Field projects
+                            company's.
 
-                            </p>
-                        </div>
+                        </p>
                     </div>
-                    <div class="carousel-item" id="service13">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Transport Services & Vehicle Hire Services</span></h3>
-                            <img src="images/service13.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                We are providing Transportation Services to our clients. For
-                                proper execution of preferred services, all our experts make a
-                                close inspection regarding the quantity to be delivered. We Well
-                                known for their fine implementation, our offered services are
-                                perfectly monitored by our experienced professionals. We are
-                                also providing all type luxury passenger vehicle for any site in
-                                INDIA.
+                    <div class="service_content">
+                        <h3 class="background double"><span>Transport Services & Vehicle Hire Services</span></h3>
+                        <img src="images/service13.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            We are providing Transportation Services to our clients. For
+                            proper execution of preferred services, all our experts make a
+                            close inspection regarding the quantity to be delivered. We Well
+                            known for their fine implementation, our offered services are
+                            perfectly monitored by our experienced professionals. We are
+                            also providing all type luxury passenger vehicle for any site in
+                            INDIA.
 
 
 
-                            </p>
-                        </div>
+                        </p>
                     </div>
-                    <div class="carousel-item" id="service14">
-                        <div class="service_content">
-                            <h3 class="background double"><span>Machinery & Heavy Equipments Supply</span></h3>
-                            <img src="images/service14.jpg" alt="">
-                            <h2>What we offer</h2>
-                           <p>
-                                We are provide all type equipments at on site ­
-                                We provide on rent:- ­
-                            <ul>
-                                <li>
-                                    <p>
-                                        D. G. Sets (24 KVA & Above ) for 24X7 Electricity.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Hydra, J.C.B., Crane, Dumper etc.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Vibrator, Truck, Trallor etc. available on rent
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Electrical Equipments Suplliers
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Night Lamps, Lights etc.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Excvators, Dozer, crawler Crane
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Grader, Roller, Water Tank, Dewatering Machine
-                                    </p>
-                                </li>
-                            </ul>
-                            </p>
-                        </div>
+                    <div class="service_content">
+                        <h3 class="background double"><span>Machinery & Heavy Equipments Supply</span></h3>
+                        <img src="images/service14.jpg" alt="">
+                        <h2>What we offer</h2>
+                        <p>
+                            We are provide all type equipments at on site ­
+                            We provide on rent:- ­
+                        <ul>
+                            <li>
+                                <p>
+                                    D. G. Sets (24 KVA & Above ) for 24X7 Electricity.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Hydra, J.C.B., Crane, Dumper etc.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Vibrator, Truck, Trallor etc. available on rent
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Electrical Equipments Suplliers
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Night Lamps, Lights etc.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Excvators, Dozer, crawler Crane
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Grader, Roller, Water Tank, Dewatering Machine
+                                </p>
+                            </li>
+                        </ul>
+                        </p>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                    <div class="prev_outer">
-                    <span class="carousel-control-prev-icon prev_inner" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                    </div>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                    <div class="next_outer">
-                    <span class="carousel-control-next-icon next_inner" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                    </div>
-                </a>
             </div>
         </div>
     </div>
+
     <!-- Footer -->
     <footer class="page-footer font-small mdb-color pt-4">
 
@@ -480,26 +432,6 @@
                 <!-- Grid column -->
 
                 <hr class="w-100 clearfix d-md-none">
-
-                <!-- Grid column -->
-                <!-- <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3 footer_link">
-                    <h3 class="mb-4 font-weight-bold">Quick links</h3>
-                    <p>
-                        <a href="#header">Home</a>
-                    </p>
-                    <p>
-                        <a href="#about">About</a>
-                    </p>
-                    <p>
-                        <a href="#projects">Projects</a>
-                    </p>
-                    <p>
-                        <a href="#services">Services</a>
-                    </p>
-                    <p>
-                        <a href="contact.html">Contact Us</a>
-                    </p>
-                </div> -->
 
                 <!-- Grid column -->
                 <hr class="w-100 clearfix d-md-none">
@@ -536,32 +468,6 @@
                 <!-- Grid column -->
                 <div class="col-md-5 col-lg-4 ml-lg-0">
 
-                    <!-- Social buttons -->
-                    <!-- <div class="text-center text-md-right">
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm mx-1">
-                                    <i class="fa fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm mx-1">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm mx-1">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="btn-floating btn-sm mx-1">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> -->
-
                 </div>
                 <!-- Grid column -->
 
@@ -595,11 +501,51 @@
 
     // scroll show nav start end
 
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            nav: true,
+            center: true,
+            margin: 10,
+            dots: true,
+            autoplaySpeed: 1000,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true,
+                    loop: true
+                },
+                600: {
+                    items: 1,
+                    nav: false,
+                    loop: true
+                },
+                768: {
+                    items: 1,
+                    nav: false,
+                    loop: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true,
+                    loop: true
+                }
+            }
+
+        });
+    });
+
 
 </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="owlcarousel/owl.carousel.js"></script>
 
 </html>
