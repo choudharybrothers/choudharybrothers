@@ -121,7 +121,7 @@
                 <div class="owl-carousel owl-theme">
                     <div class="service_content">
                         <h3 class="background double"><span>Civil Construction Work</span></h3>
-                        <img src="images/service1.jpg" alt="">
+                        <img src="images/service1.jpg" id="service1" alt="">
                         <h2>What we offer</h2>
                         <p>
                             We, 5. E. - have gained in the industry, remains our status as
@@ -139,7 +139,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>Building COnstruction</span></h3>
-                        <img src="images/service2.jpg" alt="">
+                        <img src="images/service2.jpg" id="service2" alt="">
                         <h2>What we offer</h2>
                         <p>
                             With the assistance of our adroit professionals, we are
@@ -153,7 +153,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>Earth Work & Leveling Work</span></h3>
-                        <img src="images/service3.jpg" alt="">
+                        <img src="images/service3.jpg" id="service3" alt="">
                         <h2>What we offer</h2>
                         <p>
                             With the assistance of our adroit professionals, we are
@@ -222,7 +222,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>Street Light Pole</span></h3>
-                        <img src="images/service5.jpg" alt="">
+                        <img src="images/service5.jpg" id="service5" alt="">
                         <h2>What we offer</h2>
                         <p>
                             Clients can avail from us excellent quality Street Light Poles,
@@ -235,7 +235,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>Electric Cabling Work</span></h3>
-                        <img src="images/service6.jpg" alt="">
+                        <img src="images/service6.jpg" id="service6" alt="">
                         <h2>What we offer</h2>
                         <p>
                             We provide the services of Electrical Contractor for Cabling
@@ -247,7 +247,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>Electrical Instrumentation Services</span></h3>
-                        <img src="images/service7.jpg" alt="">
+                        <img src="images/service7.jpg" id="service7" alt="">
                         <h2>What we offer</h2>
                         <p>
                             Ours' is a renowned organization, which is engaged in
@@ -261,7 +261,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>Electrical Maintenance Services</span></h3>
-                        <img src="images/service8.jpg" alt="">
+                        <img src="images/service8.jpg" id="service8" alt="">
                         <h2>What we offer</h2>
                         <p>
                             We have earned immense acknowledgment in providing
@@ -274,7 +274,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>Electrical Engineering Services</span></h3>
-                        <img src="images/service9.jpg" alt="">
+                        <img src="images/service9.jpg" id="service9" alt="">
                         <h2>What we offer</h2>
                         <p>
                             With our experience in the industry, we are able to offer our
@@ -289,7 +289,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>DG Power / Gen on Hire</span></h3>
-                        <img src="images/service10.png" alt="">
+                        <img src="images/service10.png" id="service10" alt="">
                         <h2>What we offer</h2>
                         <p>
                             As the best service provider of equipment hiring in India, we
@@ -306,7 +306,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>All Types of Solar Foundation Work</span></h3>
-                        <img src="images/service11.jpg" alt="">
+                        <img src="images/service11.jpg" id="service11" alt="">
                         <h2>What we offer</h2>
                         <p>
                             We are also providing Cabling Structure Foundation Work to
@@ -333,7 +333,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>Oil Field Services</span></h3>
-                        <img src="images/service12.jpg" alt="">
+                        <img src="images/service12.jpg" id="service12" alt="">
                         <h2>What we offer</h2>
                         <p>
                             We also offer most reliable services of Oil Field Projects Services, Such
@@ -345,7 +345,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>Transport Services & Vehicle Hire Services</span></h3>
-                        <img src="images/service13.jpg" alt="">
+                        <img src="images/service13.jpg" id="service13" alt="">
                         <h2>What we offer</h2>
                         <p>
                             We are providing Transportation Services to our clients. For
@@ -362,7 +362,7 @@
                     </div>
                     <div class="service_content">
                         <h3 class="background double"><span>Machinery & Heavy Equipments Supply</span></h3>
-                        <img src="images/service14.jpg" alt="">
+                        <img src="images/service14.jpg" id="service14" alt="">
                         <h2>What we offer</h2>
                         <p>
                             We are provide all type equipments at on site ­
@@ -505,20 +505,22 @@
         $(".owl-carousel").owlCarousel({
             items: 1,
             loop: true,
-            autoplay: true,
+            autoplay: false,
             nav: true,
             center: true,
             margin: 10,
             dots: true,
             autoplaySpeed: 1000,
-            autoplayTimeout: 4000,
+            autoplayTimeout: 50000,
             autoplayHoverPause: true,
             responsiveClass: true,
             responsive: {
                 0: {
                     items: 1,
-                    nav: true,
-                    loop: true
+                    nav: false,
+                    loop: true,
+                    autoplay: false,
+                    dots: false
                 },
                 600: {
                     items: 1,
@@ -533,7 +535,9 @@
                 1000: {
                     items: 1,
                     nav: true,
-                    loop: true
+                    loop: true,
+                    autoplaySpeed: 1000,
+                    autoplayTimeout: 4000,
                 }
             }
 
