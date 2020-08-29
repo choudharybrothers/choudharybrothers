@@ -954,7 +954,7 @@ footer h3 {
 .flip-card-front img {
 
     width: 350px;
-    height: 27.7vh;
+    height: 218px;
     border-radius: 0.625rem;
 
 }
@@ -962,7 +962,7 @@ footer h3 {
 .flip-card {
     background-color: transparent;
     width: 350px;
-    height: 27.7vh;
+    height: 218px;
     perspective: 1000px;
     border-radius: 0.625rem;
 }
@@ -1925,9 +1925,21 @@ blockquote {
 
         display: none;
     }
+
 }
 
+@media only screen and (max-width: 1366px) {
 
+    .services_in {
+
+        margin-top: 65vh;
+    }
+
+    .equipments {
+
+        margin-top: 65vh;
+    }
+}
 
 @media only screen and (max-width: 1299px) {
 
@@ -1943,7 +1955,80 @@ blockquote {
 }
 
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+
+    .projects img {
+
+        padding: 7.5rem 3.8rem 7rem 5.2rem;
+    }
+
+    .flip-card-front img {
+
+        width: 28vw;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .flip-card {
+
+        width: 28vw;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .flip-card p {
+
+        font-size: 13px;
+    }
+
+    .top .nav-link {
+
+        padding-left: 1rem !important;
+    }
+
+    .top .navbar ul li:nth-child(3) {
+
+        padding: 0;
+        width: 120px;
+    
+    }
+    .top .navbar ul li:nth-child(5) {
+
+        padding: 0;
+        width: 111px;
+    
+    }
+    .top .navbar ul li:nth-child(7) {
+
+        padding: 0;
+        width: 112px;
+    
+    }
+
+    .top img {
+
+        margin-left: 30px;
+    }
+
+    .services_in {
+
+        margin-top: 65vh;
+    }
+
+    .equipments {
+
+        margin-top: 65vh;
+    }
+
+    .imp_certificate img {
+
+        height: 600px;
+    }
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -1955,23 +2040,34 @@ blockquote {
 
     .flip-card-front img {
 
-        width: 360px;
-        height: 27.7vh;
-
+        width: 42vw;
+        height: 200px;
+        margin: 0;
+        padding: 0;
 
     }
 
     .flip-card {
 
-        width: 360px;
-        height: 27.7vh;
-        height: 27.7vh;
+        width: 42vw;
+        height: 200px;
+        margin: 0;
+        padding: 0;
 
     }
 
+    .imp_certificate img {
+
+        height: 45vh;
+    }
     .legal .legal_card {
 
         margin-top: 4%;
+    }
+
+    .services_in {
+
+        margin-top: 65vh;
     }
 
     .top img {
@@ -1981,13 +2077,20 @@ blockquote {
 
     .project_details {
 
-        padding: 0;
+        padding: 0 0 0 100px;
+        height: 33vh;
     }
 
     .projects img {
 
-        padding: 3.125rem 5rem 5rem 5rem;
+        padding: 3rem 10rem 5rem 10rem;
+        /* object-fit: contain; */
         height: 30em;
+    }
+
+    .projects {
+
+        height: 95vh;
     }
 
     .top img {
@@ -2013,6 +2116,82 @@ blockquote {
     .last_card {
 
         padding: 0.625rem;
+    }
+
+    .quote {
+
+        margin-top: 30vh;
+    }
+
+    .mission img {
+
+        display: none;
+    }
+
+    .vision img {
+
+        display: none;
+    }
+
+    .staff img {
+
+        height: 90vh;
+
+    }
+
+    .equipments {
+
+        margin-top: 65vh;
+    }
+
+    #equ1_h {
+        display: none;
+    }
+
+    #equ {
+
+        display: none;
+    }
+
+    .equipments table td {
+
+        font-size: 12px;
+    }
+
+    .equipments table th {
+
+        font-size: 12px;
+    }
+
+    .image_note span {
+
+        color: red;
+    }
+
+    .image_note {
+
+        font-size: 12px;
+        color: darkgrey;
+    }
+
+    .about h5 {
+
+        font-size: 3rem;
+    }
+
+    .about_detail h5 {
+
+        font-size: 3rem;
+    }
+
+    .mission h5 {
+
+        font-size: 3rem;
+    }
+
+    .vision h5 {
+
+        font-size: 3rem;
     }
 
 
@@ -2090,7 +2269,7 @@ blockquote {
     .flip-card-front img {
 
         width: 87vw;
-        height: 30vh;
+        height: 225px;
         margin: 0;
         padding: 0;
 
@@ -2099,7 +2278,7 @@ blockquote {
     .flip-card {
 
         width: 87vw;
-        height: 30vh;
+        height: 225px;
         margin: 0;
         padding: 0;
 
@@ -2315,11 +2494,6 @@ blockquote {
         background-color: #06062f;
     }
 
-    .project_details h2 {
-
-        font-size: 24px;
-    }
-
     .image_note {
 
         font-size: 0.5rem;
@@ -2388,8 +2562,8 @@ blockquote {
 
     .flip-card-front img {
 
-        width: 87vw;
-        height: 27vh;
+        width: 79vw;
+        height: 210px;
         margin: 0;
         padding: 0;
 
@@ -2397,8 +2571,8 @@ blockquote {
 
     .flip-card {
 
-        width: 87vw;
-        height: 27vh;
+        width: 79vw;
+        height: 210px;
         margin: 0;
         padding: 0;
 
